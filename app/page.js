@@ -51,7 +51,7 @@ const Page = () => {
               Contact Us
             </button>
           </div>
-          <div className="md:hidden flex items-center z-50 ">
+          <div className="md:hidden flex items-center ">
             <button onClick={toggleSidebar} className="text-2xl relative ">
               {sidebarOpen ? <FaTimes /> : <FaBars />}
             </button>
@@ -76,7 +76,7 @@ const Page = () => {
               <FaAngleDown />
             </span>
             <button
-              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white hover:scale-105${openSans.className}`}
+              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 transition duration-300 ease-in-out transform hover:bg-transparent  hover:scale-105 ${openSans.className}`}
             >
               Contact Us
             </button>
