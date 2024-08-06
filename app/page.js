@@ -11,8 +11,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"], // Optional: specify the weights you need
-  style: ["normal", "italic"], // Optional: specify the styles you need
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 const Page = () => {
@@ -30,7 +30,7 @@ const Page = () => {
       ></div>
       <div id="content" className="relative m-10">
         <div id="navbar" className="relative flex h-12 justify-between z-10">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <img className="w-32 h-11" src="/images/logo.svg" alt="Logo" />
           </div>
           <div className="hidden md:flex absolute inset-y-0 right-0 items-center space-x-12 h-full">
@@ -40,29 +40,28 @@ const Page = () => {
               Home
             </span>
             <span
-              className={`inline-flex items-center font-semibold text-base text-blue-950 text-center gap-1 ${openSans.className}`}
+              className={`inline-flex  items-center font-semibold text-base text-blue-950 text-center gap-1  ${openSans.className}`}
             >
               Career
               <FaAngleDown />
             </span>
             <button
-              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}
+              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white hover:scale-105 ${openSans.className}`}
             >
               Contact Us
             </button>
           </div>
-          <div className="md:hidden flex items-center">
-            <button onClick={toggleSidebar} className="text-2xl">
+          <div className="md:hidden flex items-center z-50 ">
+            <button onClick={toggleSidebar} className="text-2xl relative ">
               {sidebarOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
         {/* Mobile Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform 
-            ${
-              sidebarOpen ? "translate-x-0" : "translate-x-full"
-            } transition-transform duration-300 ease-in-out z-20`}
+          className={` top-0 right-0 h-full md:hidden w-60 bg-white  shadow-lg transform 
+            ${sidebarOpen ? "translate-x-0" : "translate-x-96"} 
+            transition-transform duration-300 ease-in-out `}
         >
           <div className="flex flex-col p-4 space-y-4">
             <span
@@ -77,7 +76,7 @@ const Page = () => {
               <FaAngleDown />
             </span>
             <button
-              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}
+              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 transition-all duration-300 ease-in-out transform hover:bg-blue-700 hover:text-white hover:scale-105${openSans.className}`}
             >
               Contact Us
             </button>
@@ -86,54 +85,52 @@ const Page = () => {
       </div>
       {/* Flex container for text and Macbook image */}
       <img
-        className="relative -top-5 left-[770px]"
+        className="relative -top-5 left-[770px] hidden lg:block"
         src="/images/Folder.svg"
         alt=""
       />
-      <div className="flex justify-between items-center relative">
+      <div className="flex flex-col lg:flex-row justify-between items-center relative">
         <div
           id="text"
-          className="flex flex-col max-w-[606px] h-[370px] ml-20 gap-5"
+          className="flex flex-col max-w-[606px] h-auto lg:h-[370px] ml-5 lg:ml-20 gap-5 text-center lg:text-left"
         >
           <span
-            className={`text-black font-bold text-5xl leading-[70px] ${plusJakartaSans.className}`}
+            className={`text-black font-bold text-3xl lg:text-5xl leading-10 lg:leading-[70px] ${plusJakartaSans.className}`}
           >
             Upload, Edit, and Collaborate on Documents Seamlessly
           </span>
           <span
-            className={`font-normal text-lg leading-8 text-slate-500 ${plusJakartaSans.className}`}
+            className={`font-normal text-base lg:text-lg leading-6 lg:leading-8 text-slate-500 ${plusJakartaSans.className}`}
           >
             We bring the results while helping you achieve cost and time savings
             without taking on risk or management overhead.
           </span>
           <div className="mt-auto">
-            {" "}
-            {/* This will push the button to the bottom */}
             <button
-              className={`font-semibold size-4 leading-[29px] w-[164px] h-[53px] rounded-xl bg-blue-800 text-white ${plusJakartaSans.className}`}
+              className={`font-semibold text-base lg:text-xl leading-6 lg:leading-[29px] w-[120px] lg:w-[164px] h-[40px] lg:h-[53px] rounded-xl bg-blue-800 text-white transition   duration-300 ease-in-out transform hover:scale-105 ${plusJakartaSans.className}`}
             >
               Book a demo
             </button>
           </div>
         </div>
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center mt-10 lg:mt-0">
           <img
-            className="relative w-[650px] h-[400px] z-10"
+            className="relative w-80 lg:w-[650px] h-auto lg:h-[400px] z-10"
             src="/images/Macbook.png"
             alt=""
           />
           <img
-            className="absolute -bottom-20 right-72 z-0"
+            className="absolute -bottom-10 lg:-bottom-20 right-20 lg:right-72 z-0"
             src="/images/dott.png"
             alt=""
           />
           <img
-            className="absolute z-20 mr-[518px]"
+            className="absolute z-20 mr-32 lg:mr-[518px]"
             src="/images/CPR1.png"
             alt=""
           />
           <img
-            className="absolute -bottom-20 right-0 z-20"
+            className="absolute -bottom-10 lg:-bottom-20 right-0 z-20"
             src="/images/CPR2.png"
             alt=""
           />
