@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { FaAngleDown, FaBars, FaTimes } from "react-icons/fa";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -34,14 +34,20 @@ const Page = () => {
             <img className="w-32 h-11" src="/images/logo.svg" alt="Logo" />
           </div>
           <div className="hidden md:flex absolute inset-y-0 right-0 items-center space-x-12 h-full">
-            <span className={`font-semibold text-base text-blue-950 text-center ${openSans.className}`}>
+            <span
+              className={`font-semibold text-base text-blue-950 text-center ${openSans.className}`}
+            >
               Home
             </span>
-            <span className={`inline-flex items-center font-semibold text-base text-blue-950 text-center gap-1 ${openSans.className}`}>
+            <span
+              className={`inline-flex items-center font-semibold text-base text-blue-950 text-center gap-1 ${openSans.className}`}
+            >
               Career
               <FaAngleDown />
             </span>
-            <button className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}>
+            <button
+              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}
+            >
               Contact Us
             </button>
           </div>
@@ -54,50 +60,85 @@ const Page = () => {
         {/* Mobile Sidebar */}
         <div
           className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform 
-            ${sidebarOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out z-20`}
+            ${
+              sidebarOpen ? "translate-x-0" : "translate-x-full"
+            } transition-transform duration-300 ease-in-out z-20`}
         >
           <div className="flex flex-col p-4 space-y-4">
-            <span className={`font-semibold text-base text-blue-950 ${openSans.className}`}>
+            <span
+              className={`font-semibold text-base text-blue-950 ${openSans.className}`}
+            >
               Home
             </span>
-            <span className={`inline-flex items-center font-semibold text-base text-blue-950 gap-1 ${openSans.className}`}>
+            <span
+              className={`inline-flex items-center font-semibold text-base text-blue-950 gap-1 ${openSans.className}`}
+            >
               Career
               <FaAngleDown />
             </span>
-            <button className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}>
+            <button
+              className={`h-12 px-4 items-center border-2 border-blue-700 rounded-lg font-bold text-base text-blue-700 ${openSans.className}`}
+            >
               Contact Us
             </button>
           </div>
         </div>
-        </div>
-        {/* Flex container for text and Macbook image */}
-        <img className="relative -top-5 left-[770px]" src="/images/Folder.svg" alt="" />
-        <div className="flex justify-between items-center relative">
-          <div id="text" className="flex flex-col max-w-[606px] h-[370px] ml-20 gap-5">
-            <span
-              className={`text-black font-bold text-5xl leading-[70px] ${plusJakartaSans.className}`}
+      </div>
+      {/* Flex container for text and Macbook image */}
+      <img
+        className="relative -top-5 left-[770px]"
+        src="/images/Folder.svg"
+        alt=""
+      />
+      <div className="flex justify-between items-center relative">
+        <div
+          id="text"
+          className="flex flex-col max-w-[606px] h-[370px] ml-20 gap-5"
+        >
+          <span
+            className={`text-black font-bold text-5xl leading-[70px] ${plusJakartaSans.className}`}
+          >
+            Upload, Edit, and Collaborate on Documents Seamlessly
+          </span>
+          <span
+            className={`font-normal text-lg leading-8 text-slate-500 ${plusJakartaSans.className}`}
+          >
+            We bring the results while helping you achieve cost and time savings
+            without taking on risk or management overhead.
+          </span>
+          <div className="mt-auto">
+            {" "}
+            {/* This will push the button to the bottom */}
+            <button
+              className={`font-semibold size-4 leading-[29px] w-[164px] h-[53px] rounded-xl bg-blue-800 text-white ${plusJakartaSans.className}`}
             >
-              Upload, Edit, and Collaborate on Documents Seamlessly
-            </span>
-            <span
-              className={`font-normal text-lg leading-8 text-slate-500 ${plusJakartaSans.className}`}
-            >
-              We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.
-            </span>
-            <div className="mt-auto"> {/* This will push the button to the bottom */}
-              <button className={`font-semibold size-4 leading-[29px] w-[164px] h-[53px] rounded-xl bg-blue-800 text-white ${plusJakartaSans.className}`}>
-                Book a demo
-              </button>
-            </div>
-          </div>
-          <div className="flex justify-center items-center">
-            <img className="relative w-[650px] right-0 h-[400px]" src="/images/Macbook.png" alt="" />
-            <img className="absolute mr-[518px]" src="/images/CPR1.png" alt="" />
-            <img className="absolute -bottom-20 right-0" src="/images/CPR2.png" alt="" />
+              Book a demo
+            </button>
           </div>
         </div>
-     
+        <div className="relative flex justify-center items-center">
+          <img
+            className="relative w-[650px] h-[400px] z-10"
+            src="/images/Macbook.png"
+            alt=""
+          />
+          <img
+            className="absolute -bottom-20 right-72 z-0"
+            src="/images/dott.png"
+            alt=""
+          />
+          <img
+            className="absolute z-20 mr-[518px]"
+            src="/images/CPR1.png"
+            alt=""
+          />
+          <img
+            className="absolute -bottom-20 right-0 z-20"
+            src="/images/CPR2.png"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };
