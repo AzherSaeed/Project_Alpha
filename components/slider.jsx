@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 export default function MySwiper() {
   return (
-    <Swiper
+    <Swiper className="mb-[199px]"
       // install Swiper modules
       modules={[Pagination, A11y, Autoplay]}
       spaceBetween={10}
@@ -29,8 +29,6 @@ export default function MySwiper() {
         disableOnInteraction: false,
       }}
       loop={true} // Enable looping
-      onSwiper={(swiper) => console.log(swiper)}
-      className="my-swiper-container" // Tailwind CSS class for custom styles
     >
       <SwiperSlide className="my-swiper-slide p-8">
         <Slider_card />

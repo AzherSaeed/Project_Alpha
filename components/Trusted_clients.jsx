@@ -7,8 +7,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 const Trusted_clients = () => {
   return (
-    <div className='space-y-44'>
-        <div className="flex container flex-col items-center space-y-10 ">
+    <div className='space-y-[200px]'>
+        <div className="flex container flex-col items-center space-y-[55px]">
+    
     <div
       className={`font-bold text-[28px] lg:text-[34px] leading-[38px] lg:leading-[46px] text-center text-zinc-700 ${plusJakartaSans.className}`}
     >
@@ -43,7 +44,7 @@ const Trusted_clients = () => {
       </button>
     </div>
   </div>
-  <div className="flex flex-col container justify-center items-center  space-y-10">
+  <div className="flex flex-col container justify-center items-center  space-y-[61px]">
     <div className="w-full lg:w-[623px]">
       <div
         className={`font-bold text-[28px] lg:text-[32px] leading-[38px] lg:leading-[42px] text-center text-blue-950 capitalize ${plusJakartaSans.className}`}
@@ -60,7 +61,8 @@ const Trusted_clients = () => {
     <div className="flex container ">
       <Slider />
     </div>
-  </div></div>
+  </div>
+  </div>
   )
 }
 

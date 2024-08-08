@@ -7,7 +7,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const Footer = () => {
   return (
-    <div className="md:space-y-28 space-y-0">
+    <div className="md:space-y-[128px] space-y-0">
       <div className="flex  justify-between">
         <div className="flex flex-col w-[318px] ">
           <img src="/images/Footer_Logo.svg" alt="" />
