@@ -52,7 +52,7 @@ const Trusted_clients = () => {
         What Our Customers are Saying
       </div>
       <div
-        className={`font-normal text-base lg:text-lg leading-8 text-center text-slate-500 capitalize ${plusJakartaSans.className}`}
+        className={`font-normal text-base lg:text-lg leading-8 text-center text-slate-500 capitalize mx-1 md:mx-0 ${plusJakartaSans.className}`}
       >
         Take advantage of a consistent budgeting, execution, and reporting
         experience with standardized planning

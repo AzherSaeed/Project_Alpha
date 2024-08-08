@@ -21,7 +21,7 @@ const SmartSol = () => {
           designed for efficiency, automation, and effortless collaboration.
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-auto h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row w-auto h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mx-4 md:mx-0">
         <div className="max-w-[503px] space-y-[30px]">
           <div
             className={`font-bold text-[24px] lg:text-[32px] leading-[34px] lg:leading-[52px] text-blue-950 capitalize ${plusJakartaSans.className}`}
@@ -44,11 +44,11 @@ const SmartSol = () => {
     <div className="flex w-auto h-auto justify-center items-center">
       <img className="max-w-auto" src="/images/Arrow.svg" alt="" />
     </div>
-    <div className="flex flex-col lg:flex-row w-auto h-auto justify-between items-center space-y-10 lg:space-y-0 mb-[148px]">
+    <div className="flex flex-col lg:flex-row w-auto h-auto justify-between items-center space-y-10 lg:space-y-0 mb-[148px] mx-4 md:mx-0">
       <div>
         <img src="/images/Dashboard3.png" alt="" className="max-w-auto" />
       </div>
-      <div className="max-w-[503px] space-y-[30px]">
+      <div className="max-w-[503px] space-y-[30px]  ">
         <div
           className={`font-bold text-[24px] lg:text-[32px] leading-[34px] lg:leading-[52px] text-blue-950 capitalize ${plusJakartaSans.className}`}
         >
