@@ -2,6 +2,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Open_Sans } from "next/font/google";
 import React, { useEffect, useState } from 'react';
+import { useRouter } from "next/navigation";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -12,6 +13,7 @@ const openSans = Open_Sans({
 const Navbar = () => {
   const [header, setHeader] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const router = useRouter();
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -38,18 +40,18 @@ const Navbar = () => {
       <div id="navbar" className="relative flex h-12 justify-between items-center z-10 mx-4 md:mx-0 ">
         {/* Logo */}
         <div className="flex items-center">
-          <img className="w-32 h-11" src="/images/logo.svg" alt="Logo" />
+          <img className="w-32 h-11 cursor-pointer" onClick={() => router.push('/')} src="/images/logo.svg" alt="Logo" />
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 h-full">
-          <span className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
+          <span onClick={() => router.push('/')} className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
             Home
           </span>
-          <span className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
+          <span onClick={() => router.push('/join-team')} className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
             Career
           </span>
-          <button
+          <button onClick={() => router.push('/contact-us')}
             className={`h-full w-[153px] flex items-center justify-center shadow-lg border-2 bg-blue-800 rounded-full font-medium text-lg leading-8 text-center text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-100 ${openSans.className}`}
           >
             Contact Us
