@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'custom-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px;',
+        'custom-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
