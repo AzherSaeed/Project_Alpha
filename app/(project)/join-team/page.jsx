@@ -1,10 +1,12 @@
+import Navbar from '@/components/navbar'
 import Image from 'next/image'
 import React from 'react'
 
 const JoinTeam = () => {
     return (
-        <div className='mt-20 flex items-center flex-col py-4'>
-            <div className="bg-alabaster w-full flex flex-col items-center p-10">
+        <div className='flex flex-col items-center'>
+            <div className="bg-alabaster w-full flex flex-col items-center pt-10 pb-24">
+                <Navbar />
                 <h6 className='text-[32px] font-bold text-cloudBurst'>Join our team</h6>
                 <p className='text-[18px] text-center text-lightSlateGrey mt-5'>Discover Your Potentials and grow with us</p>
             </div>

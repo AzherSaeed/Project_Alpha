@@ -1,13 +1,15 @@
+import Navbar from '@/components/navbar'
 import React from 'react'
 
 const ContactUs = () => {
     return (
-        <div className='flex flex-col items-center mt-24 p-4'>
-            <div className="bg-alabaster w-full flex flex-col items-center p-10">
+        <div className='flex flex-col items-center'>
+            <div className="bg-alabaster w-full flex flex-col items-center pt-10 pb-44">
+                <Navbar />
                 <h6 className='text-[34px] font-bold text-cloudBurst'>Contact Us</h6>
                 <p className='text-[18px] max-w-[70%] sm:max-w-[60%] md:max-w-[50%] lg:max-w-[40%] text-center text-lightSlateGrey mt-5'>We bring the results while helping you achieve cost and time savings without taking on risk or management overhead.</p>
             </div>
-            <form className='flex flex-col w-full gap-[34px] rounded-xl max-w-[715px] mt-20 p-[60px] shadow-subtleDeepShadow'>
+            <form className='flex flex-col w-full gap-[34px] rounded-xl max-w-[715px] relative z-10 bg-white -mt-20 p-[60px] shadow-subtleDeepShadow'>
                 <div className="flex gap-4 w-full">
                     <div className='w-full'>
                         <label htmlFor="" className='block text-davyGrey font-medium text-sm'>Full Name</label>
