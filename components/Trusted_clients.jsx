@@ -1,0 +1,67 @@
+import React from 'react'
+import Slider from "./slider";
+import { Plus_Jakarta_Sans } from "next/font/google";
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
+const Trusted_clients = () => {
+  return (
+    <div className='space-y-44'>
+        <div className="flex container flex-col items-center space-y-10 ">
+    <div
+      className={`font-bold text-[28px] lg:text-[34px] leading-[38px] lg:leading-[46px] text-center text-zinc-700 ${plusJakartaSans.className}`}
+    >
+      We’ve Worked with them, We Trust Each Other
+    </div>
+    <div className="flex md:flex-row space-y-4 md:space-y-0 flex-col ">
+      <div className="logo-container">
+        <img src="/images/Slack_C.svg" alt="Slack Logo" class="logo" />
+      </div>
+      <div className="logo-container">
+        <img
+          src="/images/Netflix_C.svg"
+          alt="Netflix Logo" 
+          class="logo"
+        />
+      </div>
+      <div class="logo-container">
+        <img src="/images/Fitbit_C.svg" alt="Fitbit Logo" class="logo" />
+      </div>
+      <div className="logo-container">
+        <img src="/images/Google_C.svg" alt="Google Logo" class="logo"/>
+      </div>
+      <div className="logo-container">
+        <img src="/images/Airbnb_C.svg" alt="Airbnb Logo" class="logo" />
+      </div>
+    </div>
+    <div className="text-center">
+      <button
+        className={`font-semibold text-base lg:text-xl border-2 leading-6 lg:leading-[29px] w-[120px] lg:w-[164px] h-[40px] lg:h-[53px] rounded-full bg-blue-800 text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
+      >
+        Book a demo
+      </button>
+    </div>
+  </div>
+  <div className="flex flex-col container justify-center items-center  space-y-10">
+    <div className="w-full lg:w-[623px]">
+      <div
+        className={`font-bold text-[28px] lg:text-[32px] leading-[38px] lg:leading-[42px] text-center text-blue-950 capitalize ${plusJakartaSans.className}`}
+      >
+        What Our Customers are Saying
+      </div>
+      <div
+        className={`font-normal text-base lg:text-lg leading-8 text-center text-slate-500 capitalize ${plusJakartaSans.className}`}
+      >
+        Take advantage of a consistent budgeting, execution, and reporting
+        experience with standardized planning
+      </div>
+    </div>
+    <div className="flex container ">
+      <Slider />
+    </div>
+  </div></div>
+  )
+}
+
+export default Trusted_clients
