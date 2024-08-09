@@ -38,8 +38,8 @@ const Trusted_clients = () => {
     </div>
     <div className="text-center">
       <button
-        className={`font-semibold text-base lg:text-xl border-2 leading-6 lg:leading-[29px] w-[120px] lg:w-[164px] h-[40px] lg:h-[53px] rounded-full cutom-button-bg text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
-      >
+                className={`font-semibold text-xs py-[12px] px-[22px] lg:text-base border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[52px] rounded-full custom-button-bg text-white transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white hover:scale-105 ${plusJakartaSans.className}`}
+                >
         Book a demo
       </button>
     </div>
@@ -47,7 +47,7 @@ const Trusted_clients = () => {
   <div className="flex flex-col container justify-center items-center  space-y-[61px]">
     <div className="w-full lg:w-[623px]">
       <div
-        className={`font-bold text-[28px] lg:text-[32px] leading-[38px] lg:leading-[42px] text-center text-blue-950 capitalize ${plusJakartaSans.className}`}
+        className={`font-bold text-[28px] lg:text-[32px] mb-[21px] leading-[38px] lg:leading-[42px] text-center text-blue-950 capitalize ${plusJakartaSans.className}`}
       >
         What Our Customers are Saying
       </div>

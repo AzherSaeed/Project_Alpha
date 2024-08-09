@@ -41,10 +41,8 @@ const SmartSol = () => {
         </div>
       </div>
     </div>
-    <div className="flex w-auto h-auto justify-center items-center">
-      <img className="max-w-auto" src="/images/Arrow.svg" alt="" />
-    </div>
-    <div className="flex flex-col lg:flex-row w-auto h-auto justify-between items-center space-y-10 lg:space-y-0 mb-[148px] mx-4 md:mx-0">
+    
+    <div className="flex flex-col lg:flex-row w-auto h-auto justify-between items-center space-y-10 lg:space-y-0  mx-4 md:mx-0">
       <div>
         <img src="/images/Dashboard3.png" alt="" className="max-w-auto" />
       </div>
@@ -63,6 +61,25 @@ const SmartSol = () => {
         </div>
       </div>
     </div>
+    <div className="flex flex-col lg:flex-row w-auto h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mb-[148px] mx-4 md:mx-0">
+        <div className="max-w-[503px] space-y-[30px]">
+          <div
+            className={`font-bold text-[24px] lg:text-[32px] leading-[34px] lg:leading-[52px] text-blue-950 capitalize ${plusJakartaSans.className}`}
+          >
+            Lorem Ipsum is simply dummy text of the
+          </div>
+          <div
+            className={`font-normal text-base lg:text-lg leading-8 text-slate-500 ${plusJakartaSans.className}`}
+          >
+            Take advantage of a consistent budgeting, execution, and reporting
+            experience with standardized planning boards and fields aligned
+            with SFDC campaign fields and value
+          </div>
+        </div>
+        <div>
+          <img className=" max-w-auto" src="/images/Dashboard3.png" alt="" />
+        </div>
+      </div>
   </div>
     )
 }

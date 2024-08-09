@@ -25,10 +25,13 @@
   }
   
     
-  .cutom-button-bg {
+  .custom-button-bg {
     background-color: #1E55A8;
   }
 
+  .custom-btn-hvr-clr{
+background-color: #054099;
+  }
   .custom-shadow {
     box-shadow: rgba(14, 30, 37, 0.08) 0px 2px 4px 0px, 
                 rgba(14, 30, 37, 0.18) 0px 2px 16px 0px;

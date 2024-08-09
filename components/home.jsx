@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className="text-center">
               <button
-                className={`font-semibold text-xs lg:text-xl border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[53px] rounded-full cutom-button-bg text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
+                className={`font-semibold text-xs py-[12px] px-[22px] lg:text-base border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[52px] rounded-full custom-button-bg text-white transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white hover:scale-105 ${plusJakartaSans.className}`}
               >
                 Book a demo
               </button>

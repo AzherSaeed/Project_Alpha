@@ -18,16 +18,10 @@ const ContactUs = () => {
           >
             Contact Us
           </div>
-          <div
-            className={` font-normal text-lg leading-8 text-center text-slate-500 capitalize  ${plusJakartaSans.className}`}
-          >
-            We bring the results while helping you achieve cost and time savings
-            without taking on risk or management overhead.
-          </div>
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form className="flex flex-col w-full gap-[34px] rounded-xl max-w-[715px] relative z-10 bg-white -mt-20 p-[60px] shadow-subtleDeepShadow">
+        <form className="flex flex-col w-full gap-[34px] rounded-xl max-w-[715px] relative z-10 bg-white -mt-[200px] p-[60px] shadow-subtleDeepShadow">
           <div className="flex gap-4 w-full">
             <div className="w-full">
               <label
@@ -38,8 +32,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
-                className="w-full placeholder:text-lightSlateGrey placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3"
-                placeholder="Enter First Name"
+                className={`w-full placeholder:text-slate-500 placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3 ${plusJakartaSans.className}`}
+                placeholder="Julia William"
               />
             </div>
             <div className="w-full">
@@ -51,8 +45,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
-                className="w-full placeholder:text-lightSlateGrey placeholder:text-[18px] mt-3 px-6 py-3 rounded-xl border border-ghost"
-                placeholder="Enter Last Name"
+                className={`w-full placeholder:text-slate-500 font-normal placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3 ${plusJakartaSans.className}`}
+                placeholder="Julia William"
               />
             </div>
           </div>
@@ -66,8 +60,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
-                className="w-full placeholder:text-lightSlateGrey placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3"
-                placeholder="Enter First Name"
+                className={`w-full placeholder:text-slate-500 placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3 ${plusJakartaSans.className}`}
+                placeholder="Julia William"
               />
             </div>
             <div className="w-full">
@@ -79,8 +73,8 @@ const ContactUs = () => {
               </label>
               <input
                 type="text"
-                className="w-full placeholder:text-lightSlateGrey placeholder:text-[18px] px-6 py-4 rounded-xl border border-ghost mt-3"
-                placeholder="Enter Last Name"
+                className={`w-full placeholder:text-slate-500 placeholder:text-[18px] px-6 py-3 rounded-xl border border-ghost mt-3 ${plusJakartaSans.className}`}
+                placeholder="Julia William"
               />
             </div>
           </div>
@@ -94,13 +88,13 @@ const ContactUs = () => {
             <textarea
               type="text"
               placeholder="Enter Details"
-              className="mt-3 w-full border-ghost border rounded-xl py-3 px-6 placeholder:text-lightSlateGrey placeholder:text-[18px]"
+              className={`mt-3 w-full border-ghost border rounded-xl py-3 px-6 placeholder:text-slate-500 placeholder:text-[18px] ${plusJakartaSans.className}`}
               rows={6}
             />
           </div>
-          <div className="flex justify-start">
+          <div className="flex justify-end">
             <button className="text-paleGrey shadow-softElevatedShadow bg-funBlue rounded-[100px] px-5 py-2 text-[18px]">
-              Contact Us
+              send{" "}
             </button>
           </div>
         </form>

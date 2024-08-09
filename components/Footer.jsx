@@ -30,28 +30,28 @@ const Footer = () => {
 
         {/* Centered div */}
         <div id="terms" className="flex justify-center my-auto">
-          <div className="flex flex-row justify-between w-[288px]">
+          <div className="flex flex-row justify-between w-[365px]">
             <div
             onClick={() => router.push('/terms-conditions')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600  cursor-pointer ${plusJakartaSans.className}`}
             >
               Terms
             </div>
             <div
               onClick={() => router.push('/privacy-policy')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
             >
               Privacy Policy
             </div>
             <div
               onClick={() => router.push('/secruity')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
             >
               Secruity
             </div>
             <div
              onClick={() => router.push('/contact-us')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
             >
               Contact Us
             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div
-        className={`flex font-normal text-sm md:text-lg leading-[29px] justify-center text-slate-500 ${plusJakartaSans.className}`}
+        className={`flex font-normal text-sm md:text-[15px] leading-[29px] justify-center text-slate-500 ${plusJakartaSans.className}`}
       >
         © 2024 ALPA
       </div>
