@@ -2,7 +2,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Open_Sans } from "next/font/google";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -11,9 +11,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 const Navbar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [header, setHeader] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const router = useRouter();
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -35,6 +37,8 @@ const Navbar = () => {
     };
   }, []);
 
+  console.log(pathname, "pathnamepathname");
+
   return (
     <div
       className={` ${
@@ -52,7 +56,7 @@ const Navbar = () => {
           <img
             className="w-32 h-11 cursor-pointer"
             onClick={() => router.push("/")}
-            src="/images/logo.svg"
+            src="/images/Logo2.svg"
             alt="Logo"
           />
         </div>
@@ -61,13 +65,19 @@ const Navbar = () => {
         <div className="hidden md:flex items-center justify-between w-[357px] space-x-8 pr-1 h-full">
           <span
             onClick={() => router.push("/")}
-            className={`font-normal text-lg leading-8 text-gray-600 text-center cursor-pointer ${plusJakartaSans.className}`}
+            className={`font-normal text-lg leading-8 ${
+              pathname === "/" ? "text-custom-button-bg" : "text-gray-600"
+            }   text-center cursor-pointer ${plusJakartaSans.className}`}
           >
             Home
           </span>
           <span
             onClick={() => router.push("/join-team")}
-            className={`font-normal text-lg leading-8 text-gray-600 text-center cursor-pointer ${plusJakartaSans.className}`}
+            className={`font-normal text-lg leading-8  ${
+              pathname === "/join-team"
+                ? "text-custom-button-bg"
+                : "text-gray-600"
+            } text-center cursor-pointer ${plusJakartaSans.className}`}
           >
             Career
           </span>
