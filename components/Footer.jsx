@@ -16,8 +16,8 @@ const Footer = () => {
         <div className="w-full md:max-w-[318px]">
           <div className="flex flex-col md:text-left mb-6 md:mb-0">
             <img
-              src="/images/Logo2.svg"
-              alt=""
+              src="/images/logo.svg"
+              alt="Logo"
               className="max-w-[116px]" // Adjust the size as needed
             />
           </div>
