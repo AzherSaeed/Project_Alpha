@@ -286,7 +286,6 @@ const privacy = () => {
               the MSA (“Customer”) controls its instance of the Services and any
               associated Service Data (the “Customer Instance”).
             </div>
-            <Footer/>
         </div>
     </>
   );

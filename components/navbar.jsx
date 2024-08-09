@@ -1,7 +1,7 @@
 "use client";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Open_Sans } from "next/font/google";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const openSans = Open_Sans({
@@ -28,31 +28,52 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHeader);
+    window.addEventListener("scroll", scrollHeader);
 
     return () => {
-      window.removeEventListener('scroll', scrollHeader);
+      window.removeEventListener("scroll", scrollHeader);
     };
   }, []);
 
   return (
-    <div className={` ${header ? "fixed top-0 container bg-white z-30" : "relative container bg-transparent"} transition-all duration-300 ease-in-out`}>
-      <div id="navbar" className="relative flex h-12 justify-between items-center z-10 mx-4 md:mx-0 ">
+    <div
+      className={` ${
+        header
+          ? "fixed top-0 container bg-white z-30"
+          : "relative container bg-transparent"
+      } transition-all duration-300 ease-in-out`}
+    >
+      <div
+        id="navbar"
+        className="relative flex h-12 justify-between items-center z-10 mx-4 md:mx-0 "
+      >
         {/* Logo */}
         <div className="flex items-center">
-          <img className="w-32 h-11 cursor-pointer" onClick={() => router.push('/')} src="/images/logo2.svg" alt="Logo" />
+          <img
+            className="w-32 h-11 cursor-pointer"
+            onClick={() => router.push("/")}
+            src="/images/logo2.svg"
+            alt="Logo"
+          />
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 h-full">
-          <span onClick={() => router.push('/')} className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
+          <span
+            onClick={() => router.push("/")}
+            className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}
+          >
             Home
           </span>
-          <span onClick={() => router.push('/join-team')} className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}>
+          <span
+            onClick={() => router.push("/join-team")}
+            className={`font-normal text-lg leading-8 text-gray-600 cursor-pointer ${openSans.className}`}
+          >
             Career
           </span>
-          <button onClick={() => router.push('/contact-us')}
-            className={`h-full w-[153px] flex items-center justify-center shadow-lg border-2 bg-blue-800 rounded-full font-medium text-lg leading-8 text-center text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-100 ${openSans.className}`}
+          <button
+            onClick={() => router.push("/contact-us")}
+            className={`h-full w-[153px] flex items-center justify-center shadow-lg border-2 bg-funBlue rounded-full font-medium text-lg leading-8 text-center text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-100 ${openSans.className}`}
           >
             Contact Us
           </button>
@@ -72,13 +93,20 @@ const Navbar = () => {
             transition-transform duration-300 ease-in-out`}
         >
           <div className="flex flex-col p-4 space-y-6">
-            <span className={`font-normal text-base text-blue-950 cursor-pointer ${openSans.className}`}>
+            <span
+              onClick={() => router.push("/")}
+              className={`font-normal text-base text-blue-950 cursor-pointer ${openSans.className}`}
+            >
               Home
             </span>
-            <span className={`inline-flex items-center font-normal text-base text-blue-950 gap-1 cursor-pointer ${openSans.className}`}>
+            <span
+              onClick={() => router.push("/join-team")}
+              className={`inline-flex items-center font-normal text-base text-blue-950 gap-1 cursor-pointer ${openSans.className}`}
+            >
               Career
             </span>
             <button
+              onClick={() => router.push("/contact-us")}
               className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 ${openSans.className}`}
             >
               Contact Us
