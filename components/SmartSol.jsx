@@ -8,7 +8,7 @@ const SmartSol = () => {
   return (
     <div className="flex flex-col container h-auto  ">
     <div className='flex flex-col space-y-[100px]'>
-      <div className="max-w-[969px] mx-auto space-y-[23px]">
+      {/* <div className="max-w-[969px] mx-auto space-y-[23px]">
         <div
           className={`font-bold text-3xl lg:text-5xl leading-[44px] lg:leading-[64px] text-center text-zinc-700 ${plusJakartaSans.className}`}
         >
@@ -20,7 +20,7 @@ const SmartSol = () => {
           Streamline your planning and budgeting with a powerful platform
           designed for efficiency, automation, and effortless collaboration.
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col lg:flex-row w-auto h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mx-4 md:mx-0">
         <div className="max-w-[503px] space-y-[30px]">
           <div

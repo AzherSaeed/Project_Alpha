@@ -36,9 +36,9 @@ const Trusted_clients = () => {
         <img src="/images/Airbnb_C.svg" alt="Airbnb Logo" class="logo" />
       </div>
     </div>
-    <div className="text-center">
+    <div className="text-center h-[52px]">
       <button
-                className={`font-semibold text-xs py-[12px] px-[22px] lg:text-base border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[52px] rounded-full custom-button-bg text-white transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white hover:scale-105 ${plusJakartaSans.className}`}
+                className={`font-semibold border-0 text-xs py-[12px] px-[22px] lg:text-base leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-full rounded-full custom-button-bg text-white  hover:custom-btn-hvr-clr hover:text-white ${plusJakartaSans.className}`}
                 >
         Book a demo
       </button>
