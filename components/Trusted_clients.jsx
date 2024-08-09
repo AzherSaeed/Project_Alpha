@@ -38,7 +38,7 @@ const Trusted_clients = () => {
     </div>
     <div className="text-center">
       <button
-        className={`font-semibold text-base lg:text-xl border-2 leading-6 lg:leading-[29px] w-[120px] lg:w-[164px] h-[40px] lg:h-[53px] rounded-full bg-blue-800 text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
+        className={`font-semibold text-base lg:text-xl border-2 leading-6 lg:leading-[29px] w-[120px] lg:w-[164px] h-[40px] lg:h-[53px] rounded-full cutom-button-bg text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
       >
         Book a demo
       </button>

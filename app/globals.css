@@ -6,9 +6,30 @@
     max-width: 1146px;
     margin: auto;
 }
+.privay_container{
+  max-width: 1152px;
+  margin: auto;
+}
 .logo-container:hover .logo {
     filter: brightness(0) saturate(100%) invert(16%) sepia(73%) saturate(1885%) hue-rotate(197deg) brightness(94%) contrast(85%);
     transform: scale(1.1); /* Adjust the scale value as needed */
     transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for both effects */
 }
+
+.custom-bullets {
+    list-style-type: disc; /* Use disc as bullet */
+  }
+
+  .custom-bullets li::marker {
+    color: #3f3f46; /* Tailwind's zinc-700 color */
+  }
+  
     
+  .cutom-button-bg {
+    background-color: #1E55A8;
+  }
+
+  .custom-shadow {
+    box-shadow: rgba(14, 30, 37, 0.08) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.18) 0px 2px 16px 0px;
+  }

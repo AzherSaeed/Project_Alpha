@@ -40,7 +40,7 @@ const Navbar = () => {
       <div id="navbar" className="relative flex h-12 justify-between items-center z-10 mx-4 md:mx-0 ">
         {/* Logo */}
         <div className="flex items-center">
-          <img className="w-32 h-11 cursor-pointer" onClick={() => router.push('/')} src="/images/logo.svg" alt="Logo" />
+          <img className="w-32 h-11 cursor-pointer" onClick={() => router.push('/')} src="/images/logo2.svg" alt="Logo" />
         </div>
 
         {/* Desktop Menu */}

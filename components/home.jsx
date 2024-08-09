@@ -15,12 +15,12 @@ const Home = () => {
   return (
     <div className="relative container overflow-hidden ">
       {/* Navbar */}
-        <div className="relative mt-6 lg:mt-10">
-          <Navbar />
-        </div>
-        {/* First Section */}
-        <div className="flex flex-col space-y-10 lg:space-y-[152px] mb-16 lg:mb-36">
-        <div className="flex flex-col max-w-[90%] lg:max-w-[1053px] h-auto mt-10 lg:mt-[152px] mx-auto space-y-8 lg:space-y-[78px]">
+      <div className="relative mt-6 lg:mt-10">
+        <Navbar />
+      </div>
+      {/* First Section */}
+      <div className="flex flex-col space-y-10 lg:space-y-[152px] mb-16 lg:mb-36">
+        <div className="flex flex-col max-w-[90%] lg:max-w-[1100px] h-auto mt-10 lg:mt-[152px] mx-auto space-y-8 lg:space-y-[78px]">
           <div className="flex flex-col max-w-[95%] lg:max-w-[891px] mx-auto space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="flex flex-col text-center gap-4 lg:gap-6">
               <span
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className="text-center">
               <button
-                className={`font-semibold text-xs lg:text-xl border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[53px] rounded-full bg-blue-800 text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
+                className={`font-semibold text-xs lg:text-xl border-2 leading-5 lg:leading-7 w-[100px] lg:w-[164px] h-[36px] lg:h-[53px] rounded-full cutom-button-bg text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 hover:scale-105 ${plusJakartaSans.className}`}
               >
                 Book a demo
               </button>
