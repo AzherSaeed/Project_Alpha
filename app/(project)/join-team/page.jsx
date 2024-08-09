@@ -15,10 +15,10 @@ const JoinTeam = () => {
 
 
       <div className=" overflow-hidden bg-slate-50 h-[400px] mb-[61px]">
-        <div className="relative  mt-[40px] max-w-[1152px] mx-auto mb-[98px] ">
+        <div className="relative  mt-[40px] max-w-[1152px] mx-auto ">
           <Navbar />
         </div>
-        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center">
+        <div className="flex flex-col space-y-[21px] !mt-[40px] privay_container max-w-[1001px] justify-center items-center">
           <div
             className={` font-bold text-[32px] leading-[42px] text-center text-blue-950 ${plusJakartaSans.className}`}
           >
@@ -34,12 +34,12 @@ const JoinTeam = () => {
 
 
       <div className="flex flex-col items-center">
-        <div className="openings-section flex flex-col items-center max-w-[675px] mt-20 w-full">
+        <div className="openings-section flex flex-col items-center max-w-[675px] w-full">
           <Image
             src="/images/search-illustration.png"
             alt="no-openings"
             width={200}
-            height={218}
+            height={200}
           />
           <div className="bg-gradient-to-r from-blueChalk to-blueChalk/0 h-1.5 w-full"></div>
         </div>

@@ -43,9 +43,9 @@ const Navbar = () => {
     <div
       className={` ${
         header
-          ? "fixed top-1 container  bg-white z-30"
-          : "relative container bg-transparent"
-      } transition-all duration-300 ease-in-out`}
+          ? "fixed top-0 py-4 container  bg-white z-30"
+          : "relative container bg-transparent "
+      } transition-all duration-300 ease-in-out `}
     >
       <div
         id="navbar"
