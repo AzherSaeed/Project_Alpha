@@ -52,7 +52,7 @@ const Navbar = () => {
           <img
             className="w-32 h-11 cursor-pointer"
             onClick={() => router.push("/")}
-            src="/images/logo2.svg"
+            src="/images/logo.svg"
             alt="Logo"
           />
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
           </span>
           <button
             onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px]  shadow-lg  custom-button-bg rounded-full font-semibold text-base leading-7  text-white  transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white hover:scale-105 ${plusJakartaSans.className}`}
+            className={`w-[131px] h-full flex items-center py-[12px] px-[22px]  shadow-lg  custom-button-bg rounded-full font-semibold text-base leading-7  text-white  transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white ${plusJakartaSans.className}`}
           >
             Contact Us
           </button>
