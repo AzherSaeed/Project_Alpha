@@ -79,11 +79,11 @@ const Navbar = () => {
                 : "text-gray-600"
             } text-center cursor-pointer ${plusJakartaSans.className}`}
           >
-            Career
+            Carrera
           </span>
           <button
             onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px]  shadow-lg  custom-button-bg rounded-full font-semibold text-base leading-7  text-white  transition-all duration-300 ease-in-out transform hover:custom-btn-hvr-clr hover:text-white ${plusJakartaSans.className}`}
+            className={`w-[131px] h-full flex items-center py-[12px] px-[22px]  custom-button-bg rounded-full font-semibold text-base leading-7  text-white  transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
           >
             Contact Us
           </button>
@@ -113,7 +113,7 @@ const Navbar = () => {
               onClick={() => router.push("/join-team")}
               className={`inline-flex items-center font-normal text-base text-blue-950 gap-1 cursor-pointer ${plusJakartaSans.className}`}
             >
-              Career
+              Carrera
             </span>
             <button
               onClick={() => router.push("/contact-us")}

@@ -9,21 +9,21 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const ContactUs = () => {
   return (
-    <div>
-      <div className="overflow-hidden bg-slate-50 h-[300px] md:h-[400px] mb-[40px] md:mb-[61px]">
-        <div className="relative mt-[20px] md:mt-[40px] max-w-[95%] md:max-w-[1152px] mx-auto">
+    <>
+      <div className="overflow-hidden bg-slate-50 h-[300px] md:h-[629px] ">
+        <div className="relative mt-[20px] md:mt-[40px] max-w-[95%] md:max-w-[1152px] mx-auto mb-[62px]">
           <Navbar />
         </div>
         <div className="flex flex-col space-y-[15px] md:space-y-[21px] privay_container max-w-[95%] md:max-w-[1001px] justify-center items-center mx-auto">
           <div
-            className={`font-bold mt-[20px] md:mt-[40px] text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 ${plusJakartaSans.className}`}
+            className={`font-bold   text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 mb[33px] ${plusJakartaSans.className}`}
           >
             Contact Us
           </div>
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[715px] relative z-10 bg-white -mt-[150px] md:-mt-[200px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
+        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[715px] relative z-10 bg-white mt-[50px] md:-mt-[380px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
           <div className="flex flex-col md:flex-row gap-4 w-full">
             <div className="w-full">
               <label
@@ -105,7 +105,7 @@ const ContactUs = () => {
           </div>
         </form>
       </div>
-    </div>
+      </>
   );
 };
 

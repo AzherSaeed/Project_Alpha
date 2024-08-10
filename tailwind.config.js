@@ -10,7 +10,8 @@ module.exports = {
       boxShadow: {
         'custom-shadow': 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
         softElevatedShadow: '0px 10px 25px 0px #1525481A',
-        subtleDeepShadow: '0px 8px 28px 0px #1E55A812'
+        subtleDeepShadow: '0px 0px 52.88px 0px #0B24481F'
+
       },
 
       colors: {
