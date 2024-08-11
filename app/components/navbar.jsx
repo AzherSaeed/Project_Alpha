@@ -109,7 +109,7 @@ const Navbar = () => {
           ref={sidebarRef} // Attach ref to sidebar
           className={`fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-40 transform ${
             sidebarOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out`}
+          } transition-transform duration-300 ease-in-out `}
         >
           <div className="flex flex-col p-6 space-y-6">
             <span

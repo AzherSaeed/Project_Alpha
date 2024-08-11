@@ -1,7 +1,7 @@
 
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from '@/components/Footer'
+import Navbar from "@/app/components/navbar";
+import Footer from '@/app/components/Footer'
 import { Plus_Jakarta_Sans } from "next/font/google";
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],

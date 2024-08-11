@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/app/components/navbar";
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
@@ -23,7 +23,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[715px] relative z-10 bg-white mt-[50px] md:-mt-[380px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
+        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[715px] relative bg-white mt-[50px] md:-mt-[380px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
           <div className="flex flex-col md:flex-row gap-4 w-full">
             <div className="w-full">
               <label

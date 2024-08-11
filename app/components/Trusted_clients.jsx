@@ -7,11 +7,11 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 const Trusted_clients = () => {
   return (
-    <div className='space-y-[200px] mb-[128px]'>
+    <div className='space-y-[200px] mt-[120px] mb-[128px]'>
         <div className="flex container flex-col items-center space-y-[55px] ">
     <div className='space-y-[21px]'>
     <div
-      className={`font-bold text-[28px] lg:text-[32px] leading-[38px] lg:leading-[42px] text-center text-[#1B2559]  ${plusJakartaSans.className}`}
+      className={`font-bold text-[28px] lg:text-[32px] leading-[38px] lg:leading-[42px] text-center text-[#1B2559] capitalize ${plusJakartaSans.className}`}
     >
 Compliance made simple
     </div>
@@ -38,13 +38,7 @@ Compliance made simple
         <img src="/images/Airbnb_C.svg" alt="Airbnb Logo" class="logo" />
       </div>
     </div>
-    <div className="text-center h-[52px] ">
-      <button
-                className={`font-semibold border-0 text-xs py-[12px] lg:px-[22px] px-[24px]  lg:text-base leading-5 lg:leading-7 w-[130px] lg:w-[164px] h-[40px] lg:h-full rounded-full custom-button-bg text-white  hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
-                >
-        Book a demo
-      </button>
-    </div>
+    
   </div>
   {/* <div className="flex flex-col container justify-center items-center  space-y-[61px]">
     <div className="w-full lg:w-[623px]">

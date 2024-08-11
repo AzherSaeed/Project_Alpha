@@ -45,3 +45,26 @@ background-color: #054099;
   .dashboard-shadow{
     box-shadow: '0px 0px 52.88px 0px #0B24481F',
   }
+  .custom-bullets {
+    list-style: none; /* Remove the default bullets */
+    padding-left: 0;
+  }
+  
+  .custom-bullets li {
+    position: relative;
+    padding-left: 23px;
+  }
+  
+  .custom-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 13px; 
+    height: 13px; 
+    background-image: url('/images/Bullet.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

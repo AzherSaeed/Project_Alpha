@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";

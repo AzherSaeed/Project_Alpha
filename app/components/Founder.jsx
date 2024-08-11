@@ -17,9 +17,7 @@ const Founder = () => {
         <div
           className={`max-w-full lg:max-w-[910px] font-normal text-sm lg:text-lg mb-8 lg:mb-[55px] leading-6 lg:leading-8 text-center text-[#6D7A8D] capitalize ${plusJakartaSans.className}`}
         >
-          As patients, we've experienced the pain of delayed treatment from
-          slow prior authorization. We're building for a world where doctors
-          quarterback our care, not insurance policies.
+          We've experienced the burdens of costly and time-consuming audits firsthand. At Alpa, we're committed to transforming compliance—saving you time and money with each review, so you can focus on what matters most.
         </div>
       </div>
       <div className="relative flex flex-col lg:flex-row gap-6 lg:gap-[74px] justify-center items-center">
@@ -31,10 +29,7 @@ const Founder = () => {
               <div className={`font-bold text-base lg:text-lg leading-6 lg:leading-[22px] text-[#183B56] ${plusJakartaSans.className}`}>Alejandro Diez</div>
               <div className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] ${plusJakartaSans.className}`}>Co-founder</div>
             </div>
-            <div className="flex flex-row justify-between">
-              <img src="/images/GoogleF.svg" alt="" />
-              <img src="/images/AirbnbF.svg" alt="" />
-            </div>
+            
           </div>
         </div>
 
@@ -49,10 +44,7 @@ const Founder = () => {
               <div className={`w-[152px] font-bold text-base lg:text-lg leading-6 lg:leading-[22px] text-[#183B56] ${plusJakartaSans.className}`}>Patricio Gutierrez</div>
               <div className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] ${plusJakartaSans.className}`}>Co-founder</div>
             </div>
-            <div className="flex flex-row justify-between">
-              <img src="/images/GoogleF.svg" alt="" />
-              <img src="/images/AirbnbF.svg" alt="" />
-            </div>
+          
           </div>
         </div>
       </div>
