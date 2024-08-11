@@ -1,7 +1,6 @@
 "use client";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Open_Sans } from "next/font/google";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -16,6 +15,7 @@ const Navbar = () => {
 
   const [header, setHeader] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const sidebarRef = useRef(null); // Ref to track sidebar element
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -29,27 +29,35 @@ const Navbar = () => {
     }
   };
 
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setSidebarOpen(false); // Close sidebar if click is outside
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       window.removeEventListener("scroll", scrollHeader);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
-  console.log(pathname, "pathnamepathname");
+  console.log(pathname, "pathname");
 
   return (
     <div
       className={` ${
         header
-          ? "fixed top-0 py-4 container  bg-white z-30"
-          : "relative container bg-transparent "
-      } transition-all duration-300 ease-in-out `}
+          ? "fixed top-0 py-4 container bg-white z-30"
+          : "relative container bg-transparent"
+      } transition-all duration-300 ease-in-out`}
     >
       <div
         id="navbar"
-        className="relative flex h-[52px] justify-between items-center z-10 mx-4 md:mx-0 "
+        className="relative flex h-[52px] justify-between items-center z-10 mx-4 md:mx-0"
       >
         {/* Logo */}
         <div className="flex items-center">
@@ -67,13 +75,13 @@ const Navbar = () => {
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
               pathname === "/" ? "text-custom-button-bg" : "text-gray-600"
-            }   text-center cursor-pointer ${plusJakartaSans.className}`}
+            } text-center cursor-pointer ${plusJakartaSans.className}`}
           >
             Home
           </span>
           <span
             onClick={() => router.push("/join-team")}
-            className={`font-normal text-lg leading-8  ${
+            className={`font-normal text-lg leading-8 ${
               pathname === "/join-team"
                 ? "text-custom-button-bg"
                 : "text-gray-600"
@@ -83,7 +91,7 @@ const Navbar = () => {
           </span>
           <button
             onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px]  custom-button-bg rounded-full font-semibold text-base leading-7  text-white  transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
+            className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
           >
             Contact Us
           </button>
@@ -98,25 +106,35 @@ const Navbar = () => {
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full md:hidden w-52 bg-white shadow-lg transform 
-            ${sidebarOpen ? "translate-x-0" : "translate-x-full"} 
-            transition-transform duration-300 ease-in-out`}
+          ref={sidebarRef} // Attach ref to sidebar
+          className={`fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-40 transform ${
+            sidebarOpen ? "translate-x-0" : "translate-x-full"
+          } transition-transform duration-300 ease-in-out`}
         >
-          <div className="flex flex-col p-4 space-y-6">
+          <div className="flex flex-col p-6 space-y-6">
             <span
-              onClick={() => router.push("/")}
+              onClick={() => {
+                router.push("/");
+                toggleSidebar(); // Close sidebar after navigation
+              }}
               className={`font-normal text-base text-blue-950 cursor-pointer ${plusJakartaSans.className}`}
             >
               Home
             </span>
             <span
-              onClick={() => router.push("/join-team")}
-              className={`inline-flex items-center font-normal text-base text-blue-950 gap-1 cursor-pointer ${plusJakartaSans.className}`}
+              onClick={() => {
+                router.push("/join-team");
+                toggleSidebar(); // Close sidebar after navigation
+              }}
+              className={`font-normal text-base text-blue-950 cursor-pointer ${plusJakartaSans.className}`}
             >
               Carrera
             </span>
             <button
-              onClick={() => router.push("/contact-us")}
+              onClick={() => {
+                router.push("/contact-us");
+                toggleSidebar(); // Close sidebar after navigation
+              }}
               className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 ${plusJakartaSans.className}`}
             >
               Contact Us
