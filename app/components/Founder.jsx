@@ -7,20 +7,20 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const Founder = () => {
   return (
-    <div className="flex max-w-[95%] lg:max-w-[1089px] mx-auto flex-col items-center justify-between space-y-6 lg:space-y-[12px] mb-16 lg:mb-[128px]">
+    <div className="flex max-w-[95%] lg:max-w-[1089px] mx-auto flex-col items-center justify-between space-y-6 lg:space-y-[32px] mb-16 lg:mb-[128px]">
       <div
         className={`font-bold text-2xl lg:text-[34px] leading-8 lg:leading-[46px] text-center text-[#2D3643] ${plusJakartaSans.className}`}
       >
         Founders
       </div>
-      <div className="flex flex-col">
+      
         <div
           className={`max-w-full lg:max-w-[910px] font-normal text-sm lg:text-lg mb-8 lg:mb-[55px] leading-6 lg:leading-8 text-center text-[#6D7A8D] capitalize ${plusJakartaSans.className}`}
         >
           We've experienced the burdens of costly and time-consuming audits firsthand. At Alpa, we're committed to transforming compliance—saving you time and money with each review, so you can focus on what matters most.
-        </div>
+      
       </div>
-      <div className="relative flex flex-col lg:flex-row gap-6 lg:gap-[74px] justify-center items-center">
+      <div className="relative flex flex-col lg:flex-row gap-6 lg:gap-[74px] justify-center items-center mb-[32px]">
         {/* Profile 1 */}
         <div id="profile1" className="flex flex-row justify-between w-full lg:w-[218px] space-x-3">
           <img className="flex size-[56px] left-0 top-0" src="/images/PhotoF.png" alt="" />
@@ -48,6 +48,14 @@ const Founder = () => {
           </div>
         </div>
       </div>
+      <div className="text-center md:h-[52px]  ">
+            <button
+  className={`w-full max-w-[130px] lg:max-w-[146px] rounded-[39px] border-2 py-2 lg:py-3 px-4 lg:px-5 border-[#1E55A8] font-semibold text-sm lg:text-base leading-6 lg:leading-7 text-[#1E55A8] transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
+>
+  Book a demo
+</button>
+
+            </div>
     </div>
   );
 };

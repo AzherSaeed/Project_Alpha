@@ -21,11 +21,7 @@ const Footer = () => {
               className="max-w-[116px]" // Adjust the size as needed
             />
           </div>
-          <div
-            className={`font-normal text-sm leading-[21px] text-left text-slate-500 mt-4 ${plusJakartaSans.className}`}
-          >
-            Lorem ipsum is a placeholder text commonly used to demonstrate.
-          </div>
+          
         </div>
 
         {/* Centered div */}

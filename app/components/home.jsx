@@ -45,13 +45,13 @@ const Home = () => {
             </div>
           </div>
           {/* Dashboard image */}
-          <div className="px-4">
-            <img
-              src="/images/Dashboard.png"
-              alt="Dashboard"
-              className="w-full lg:max-w-[1053px] mx-auto rounded-[17px] shadow-subtleDeepShadow"
-            />
-          </div>
+          <img
+  src="/images/Dashboard.png"
+  alt="Dashboard"
+  className="w-full max-w-[1280px] mx-auto  "
+/>
+
+          
         </div>
       </div>
       {/* Smart_Solution */}

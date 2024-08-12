@@ -15,7 +15,7 @@ const Trusted_clients = () => {
     >
 Compliance made simple
     </div>
-    <div className={`font-normal text-lg leading-8 text-center text-[#6D7A8D] ${plusJakartaSans.className}`}>Streamline audit processes with solutions embraced by top firms.</div>
+    <div className={`font-normal text-lg leading-8 text-center text-[#6D7A8D] capitalize ${plusJakartaSans.className}`}>Streamline audit processes with solutions embraced by top firms.</div>
     </div>
     <div className="flex md:flex-row space-y-4 md:space-y-0 flex-col ">
       <div className="logo-container">
