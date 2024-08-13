@@ -23,7 +23,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[715px] relative bg-white mt-[50px] md:-mt-[380px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
+        <form className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white mt-[50px] md:-mt-[380px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
           <div className="flex flex-col md:flex-row gap-4 w-full">
             <div className="w-full">
               <label
@@ -35,7 +35,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 id="firstName"
-                className={`w-full placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500   placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
                 placeholder="Julia William"
               />
             </div>
@@ -49,7 +49,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 id="lastName"
-                className={`w-full placeholder:text-slate-500 font-normal placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 font-normal placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
                 placeholder="Julia William"
               />
             </div>
@@ -65,7 +65,7 @@ const ContactUs = () => {
               <input
                 type="email"
                 id="email"
-                className={`w-full placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
                 placeholder="julia@example.com"
               />
             </div>
@@ -79,7 +79,7 @@ const ContactUs = () => {
               <input
                 type="tel"
                 id="phoneNumber"
-                className={`w-full placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
                 placeholder="+1234567890"
               />
             </div>
@@ -87,14 +87,14 @@ const ContactUs = () => {
           <div className="w-full">
             <label
               htmlFor="description"
-              className="block text-davyGrey font-medium text-sm"
+              className="block outline-slate-500 text-davyGrey font-medium text-sm"
             >
               Description
             </label>
             <textarea
               id="description"
               placeholder="Enter Details"
-              className={`mt-2 md:mt-3 w-full border-ghost border rounded-xl py-2 md:py-3 px-4 md:px-6 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] ${plusJakartaSans.className}`}
+              className={`mt-2 md:mt-3 w-full outline-slate-500 border-ghost border rounded-xl py-2 md:py-3 px-4 md:px-6 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] ${plusJakartaSans.className}`}
               rows={6}
             />
           </div>

@@ -22,12 +22,12 @@ const Home = () => {
       {/* First Section */}
       <div className="flex flex-col space-y-6 lg:space-y-[152px] mb-8 lg:mb-[148px] ">
         <div className="flex flex-col max-w-full lg:max-w-[1100px] mt-6 lg:mt-[152px] mx-auto space-y-4 lg:space-y-[78px]">
-          <div className="flex flex-col max-w-full lg:max-w-[891px] mx-auto space-y-4 lg:space-y-8 text-center lg:text-left px-4 ">
+          <div className="flex flex-col max-w-full lg:max-w-[891px] mx-auto space-y-4 lg:space-y-8 text-center lg:text-left px-1 md:px-0">
             <div className="flex flex-col text-center gap-4 lg:gap-6">
               <h1
-                className={`text-[#2D3643] font-bold text-2xl lg:text-5xl leading-8 lg:leading-[64px] ${plusJakartaSans.className}`}
+                className={`text-[#2D3643]  font-bold text-2xl lg:text-5xl leading-8 lg:leading-[64px] ${plusJakartaSans.className}`}
               >
-                Unlock PCAOB Compliance with alpa
+                Unlock PCAOB Compliance with ALPA
               </h1>
               <p
                 className={`font-normal text-sm lg:text-lg leading-6 lg:leading-8 text-slate-500 ${plusJakartaSans.className}`}

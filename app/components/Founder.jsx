@@ -34,7 +34,7 @@ const Founder = () => {
         </div>
 
         {/* Divider (only visible on larger screens) */}
-        <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 border-l border-[#DDE6F2]"></div>
+        <div className="hidden lg:block  absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 border-l border-[#DDE6F2]"></div>
 
         {/* Profile 2 */}
         <div id="profile2" className="flex flex-row justify-between w-full lg:w-[218px] space-x-3">
@@ -48,7 +48,7 @@ const Founder = () => {
           </div>
         </div>
       </div>
-      <div className="text-center md:h-[52px]  ">
+      <div className="text-center md:h-[52px]   ">
             <button
   className={`w-full max-w-[130px] lg:max-w-[146px] rounded-[39px] border-2 py-2 lg:py-3 px-4 lg:px-5 border-[#1E55A8] font-semibold text-sm lg:text-base leading-6 lg:leading-7 text-[#1E55A8] transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
 >

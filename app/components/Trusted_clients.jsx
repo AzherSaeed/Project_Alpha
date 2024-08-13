@@ -7,7 +7,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 const Trusted_clients = () => {
   return (
-    <div className='space-y-[200px] mt-[120px] mb-[128px]'>
+    <div className='space-y-[200px]   mt:[50px] md:mt-[120px] mb-[128px]'>
         <div className="flex container flex-col items-center space-y-[55px] ">
     <div className='space-y-[21px]'>
     <div

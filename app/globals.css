@@ -63,7 +63,7 @@ background-color: #054099;
     transform: translateY(-50%);
     width: 13px; 
     height: 13px; 
-    background-image: url('/images/Bullet.png');
+    background-image: url('/images/Bullet.svg');
     background-size: contain;
     background-repeat: no-repeat;
   }
