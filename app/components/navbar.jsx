@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between w-[357px] space-x-8 pr-1 h-full">
+        <div className="hidden md:flex items-center justify-between w-[357px] space-x-8 pr-1 h-full ">
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
@@ -106,7 +106,7 @@ const Navbar = () => {
         {/* Mobile Sidebar */}
         <div
           ref={sidebarRef} // Attach ref to sidebar
-          className={`fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-40 transform ${
+          className={`fixed top-0 right-0 h-full w-[250px] bg-white shadow-lg z-40 transform  ${
             sidebarOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out `}
         >
