@@ -10,8 +10,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 const JoinTeam = () => {
   return (
     <>
-      <div className=" overflow-hidden bg-[#F9FAFF] md:h-[271px] h-[200px]  mb-[20px]">
-        <div className="relative mt-[20px] md:mt-[40px] max-w-[1152px] mx-auto mb-[40px] md:mb-[73px] ">
+      <div className=" overflow-hidden bg-[#F9FAFF] md:h-[200px] h-[200px]  mb-[20px]">
+        <div className="relative mt-[20px]  max-w-[1152px] mx-auto mb-[40px] ">
           <Navbar />
         </div>
         <div className="flex flex-col privay_container max-w-[1001px] justify-center items-center">
@@ -34,7 +34,7 @@ const JoinTeam = () => {
           />
           <div className="bg-gradient-to-r from-blueChalk/0 mt-1 via-blueChalk to-blueChalk/0 h-1.5 w-full"></div>
         </div>
-        <div className={`text-center font-bold text-2xl md:text-3xl leading-6 px-2 md:px-0  mt-4 text-[#1E55A8] mb-[5px] ${plusJakartaSans.className}`}>
+        <div className={`text-center font-bold text-xl md:text-3xl leading-6 px-2 md:px-0 capitalize  mt-4 text-[#1E55A8] mb-[5px] ${plusJakartaSans.className}`}>
           There are no openings yet
         </div>
         <div className={`text-center px-2 md:px-0 text-sm  md:text-base  leading-6  text-[#6D7A8D] mt-4${plusJakartaSans.className}`}>

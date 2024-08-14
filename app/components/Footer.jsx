@@ -2,7 +2,7 @@
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -11,13 +11,15 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 const Footer = () => {
   const router = useRouter();
   return (
-    <div className="space-y-6 md:space-y-[128px] px-4 md:px-0">
+    <div className="space-y-6 md:space-y-[128px]">
       <div className="flex flex-col md:flex-row justify-between md:items-start">
         <div className="w-full md:max-w-[318px]">
           <div className="flex flex-col md:text-left mb-6 md:mb-0  items-center md:items-start">
-            <img
+            <Image
               src="/images/Logo2.svg"
               alt="Logo"
+              width={32}
+              height={11}
               className="md:max-w-32 h-11 w-24  cursor-pointer"
               />
           </div>
@@ -25,8 +27,8 @@ const Footer = () => {
         </div>
 
         {/* Centered div */}
-        <div id="terms" className="flex justify-center my-auto">
-          <div className="flex flex-row justify-between w-[365px]">
+        <div id="terms" className="flex justify-start my-auto ">
+          <div className="md:flex md:flex-row grid md:mx-0 mx-20 grid-cols-2 justify-between w-[365px]">
             <div
             onClick={() => router.push('/terms-conditions')}
               className={`font-normal text-sm leading-[29px] text-gray-600  cursor-pointer ${plusJakartaSans.className}`}
@@ -35,7 +37,7 @@ const Footer = () => {
             </div>
             <div
               onClick={() => router.push('/privacy-policy')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer  ${plusJakartaSans.className}`}
             >
               Privacy Policy
             </div>

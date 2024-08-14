@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from "./slider";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Image from 'next/image'
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -19,24 +20,58 @@ Compliance made simple
     </div>
     <div className="flex md:flex-row space-y-4 md:space-y-0 flex-col ">
       <div className="logo-container">
-        <img src="/images/Slack_C.svg" alt="Slack Logo" class="logo" />
-      </div>
+      <Image
+  src="/images/Slack_C.svg"
+  alt="Slack Logo"
+  className="logo"
+  width={225}  // Replace this with the actual width of the SVG.
+  height={39} // Replace this with the actual height of the SVG.
+  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
+  priority // Add this if the image should load with higher priority.
+/>      </div>
       <div className="logo-container">
-        <img
-          src="/images/Netflix_C.svg"
-          alt="Netflix Logo" 
-          class="logo"
-        />
+      <Image
+  src="/images/Netflix_C.svg"
+  alt="Netflix Logo"
+  className="logo"
+  width={225}  // Replace this with the actual width of the SVG.
+  height={39} // Replace this with the actual height of the SVG.
+  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
+  priority // Add this if the image should load with higher priority.
+/>   
       </div>
       <div class="logo-container">
-        <img src="/images/Fitbit_C.svg" alt="Fitbit Logo" class="logo" />
+      <Image
+  src="/images/Fitbit_C.svg"
+  alt="Fitbit Logo"
+  className="logo"
+  width={225}  // Replace this with the actual width of the SVG.
+  height={39} // Replace this with the actual height of the SVG.
+  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
+  priority // Add this if the image should load with higher priority.
+/>   
       </div>
       <div className="logo-container">
-        <img src="/images/Google_C.svg" alt="Google Logo" class="logo"/>
+      <Image
+  src="/images/Google_C.svg"
+  alt="Google Logo"
+  className="logo"
+  width={225}  // Replace this with the actual width of the SVG.
+  height={39} // Replace this with the actual height of the SVG.
+  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
+  priority // Add this if the image should load with higher priority.
+/>   
       </div>
       <div className="logo-container">
-        <img src="/images/Airbnb_C.svg" alt="Airbnb Logo" class="logo" />
-      </div>
+      <Image
+  src="/images/Airbnb_C.svg"
+  alt="Airbnb Logo"
+  className="logo"
+  width={225}  // Replace this with the actual width of the SVG.
+  height={39} // Replace this with the actual height of the SVG.
+  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
+  priority // Add this if the image should load with higher priority.
+/>         </div>
     </div>
     
   </div>

@@ -6,7 +6,9 @@ import Founder from "./Founder";
 import Smart_Solution from "./SmartSol";
 import Trusted_Clients from "./Trusted_clients";
 import { useRouter, usePathname } from "next/navigation";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans ,  } from "next/font/google";
+import Image from "next/image";
+ 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -18,11 +20,11 @@ const Home = () => {
   return (
     <div className="relative container mx-auto overflow-hidden ">
       {/* Navbar */}
-      <div className="relative mt-4  lg:mt-10">
+      <div className="relative mt-4  ">
         <Navbar />
       </div>
       {/* First Section */}
-      <div className="flex flex-col space-y-6 lg:space-y-[152px] mb-8 lg:mb-[148px] ">
+      <div className="flex flex-col space-y-6 lg:space-y-[152px] mb-8 lg:mb-[120px] ">
         <div className="flex flex-col max-w-full lg:max-w-[1100px] mt-6 lg:mt-[152px] mx-auto space-y-4 lg:space-y-[78px]">
           <div className="flex flex-col max-w-full lg:max-w-[891px] mx-auto space-y-4 lg:space-y-8 text-center lg:text-left px-1 md:px-0">
             <div className="flex flex-col text-center gap-4 lg:gap-6">
@@ -49,13 +51,15 @@ const Home = () => {
              
             </div>
           </div>
-          {/* Dashboard image */}
                     {/* Dashboard image */}
-          <img
-            src="/images/Dashboard.png"
-            alt="Dashboard"
-            className="w-full max-w-[1280px] mx-auto   "
-          />
+                    <Image
+  src="/images/Dashboard.png"
+  alt="Dashboard"
+  className="w-full max-w-[1280px] mx-auto"
+  width={1280}  
+  height={720}  
+  layout="responsive"
+/>
         </div>
       </div>
       {/* Smart_Solution */}
