@@ -50,10 +50,11 @@ const Home = () => {
             </div>
           </div>
           {/* Dashboard image */}
+                    {/* Dashboard image */}
           <img
             src="/images/Dashboard.png"
             alt="Dashboard"
-            className="w-full max-w-[1280px] mx-auto  "
+            className="w-full max-w-[1280px] mx-auto   "
           />
         </div>
       </div>
