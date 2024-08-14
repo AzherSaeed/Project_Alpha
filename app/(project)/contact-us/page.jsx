@@ -36,7 +36,7 @@ const ContactUs = () => {
         </div>
         <div className="flex flex-col space-y-[15px] md:space-y-[21px] privay_container max-w-[95%] md:max-w-[1001px] justify-center items-center mx-auto">
           <div
-            className={`font-bold   text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 mb[33px] ${plusJakartaSans.className}`}
+            className={`font-bold   text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 mb[33px] font-Stoshi`}
           >
             Contact Us
           </div>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                 type="text"
                 id="firstName"
                 name="firstName"
-                className={`w-full outline-slate-500   placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500   placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi`}
                 placeholder="Julia William"
                 required
               />
@@ -72,7 +72,7 @@ const ContactUs = () => {
                 type="text"
                 id="lastName"
                 name="lastName"
-                className={`w-full outline-slate-500 placeholder:text-slate-500 font-normal placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 font-normal placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi`}
                 placeholder="Julia William"
                 required
               />
@@ -90,7 +90,7 @@ const ContactUs = () => {
                 type="email"
                 id="email"
                 name="email"
-                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi`}
                 placeholder="julia@example.com"
                 required
               />
@@ -106,7 +106,7 @@ const ContactUs = () => {
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
-                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 ${plusJakartaSans.className}`}
+                className={`w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi`}
                 placeholder="+1234567890"
                 required
               />
@@ -123,7 +123,7 @@ const ContactUs = () => {
               id="description"
               name="description"
               placeholder="Enter Details"
-              className={`mt-2 md:mt-3 w-full outline-slate-500 border-ghost border rounded-xl py-2 md:py-3 px-4 md:px-6 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] ${plusJakartaSans.className}`}
+              className={`mt-2 md:mt-3 w-full outline-slate-500 border-ghost border rounded-xl py-2 md:py-3 px-4 md:px-6 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] font-Stoshi`}
               rows={6}
               required
             />

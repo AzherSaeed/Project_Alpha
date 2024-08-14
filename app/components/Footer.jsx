@@ -1,12 +1,8 @@
 "use client";
 import React from "react";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
+
 
 const Footer = () => {
   const router = useRouter();
@@ -28,28 +24,28 @@ const Footer = () => {
 
         {/* Centered div */}
         <div id="terms" className="flex justify-start my-auto ">
-          <div className="md:flex md:flex-row grid md:mx-0 mx-20 grid-cols-2 justify-between w-[365px]">
+          <div className="md:flex md:flex-row grid md:mx-0 text-center grid-cols-2 justify-between w-[365px]">
             <div
             onClick={() => router.push('/terms-conditions')}
-              className={`font-normal text-sm leading-[29px] text-gray-600  cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600  cursor-pointer font-Stoshi`}
             >
               Terms
             </div>
             <div
               onClick={() => router.push('/privacy-policy')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer  ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer  font-Stoshi`}
             >
               Privacy Policy
             </div>
             <div
               onClick={() => router.push('/secruity')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer font-Stoshi`}
             >
               Security
             </div>
             <div
              onClick={() => router.push('/contact-us')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer font-Stoshi`}
             >
               Contact Us
             </div>
@@ -58,7 +54,7 @@ const Footer = () => {
       </div>
 
       <div
-        className={`flex font-normal text-sm md:text-[15px] leading-[29px] justify-center text-slate-500 ${plusJakartaSans.className}`}
+        className={`flex font-normal text-sm md:text-[15px] leading-[29px] justify-center text-slate-500 font-Stoshi`}
       >
         © 2024 ALPA
       </div>

@@ -74,7 +74,7 @@ const Navbar = () => {
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
               pathname === "/" ? "text-custom-button-bg" : "text-gray-600"
-            } text-center cursor-pointer ${plusJakartaSans.className}`}
+            } text-center cursor-pointer font-Stoshi`}
           >
             Home
           </span>
@@ -84,13 +84,13 @@ const Navbar = () => {
               pathname === "/join-team"
                 ? "text-custom-button-bg"
                 : "text-gray-600"
-            } text-center cursor-pointer ${plusJakartaSans.className}`}
+            } text-center cursor-pointer font-Stoshi`}
           >
             Careers
           </span>
           <button
             onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white ${plusJakartaSans.className}`}
+            className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
           >
             Contact Us
           </button>
@@ -116,7 +116,7 @@ const Navbar = () => {
                 router.push("/");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
             >
               Home
             </span>
@@ -125,7 +125,7 @@ const Navbar = () => {
                 router.push("/join-team");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer ${plusJakartaSans.className}`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
             >
               Careers
             </span>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 router.push("/contact-us");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 ${plusJakartaSans.className}`}
+              className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 font-Stoshi`}
             >
               Contact Us
             </button>

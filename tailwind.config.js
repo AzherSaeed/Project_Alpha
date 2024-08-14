@@ -30,6 +30,8 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         'open-sans': ['Open Sans', 'sans-serif'],
         Poppins: ['Poppins', 'sans-serif'],
+          Stoshi: ['Satoshi', 'sans-serif']
+       
       },
     },
   },

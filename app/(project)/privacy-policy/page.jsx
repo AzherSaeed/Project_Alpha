@@ -17,12 +17,12 @@ const Privacy = () => {
         </div>
         <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={`font-bold text-[28px] sm:text-[32px] leading-[38px] sm:leading-[42px] text-center text-blue-950 ${plusJakartaSans.className}`}
+            className={`font-bold text-[28px] sm:text-[32px] leading-[38px] sm:leading-[42px] text-center text-blue-950 font-Stoshi`}
           >
             Privacy Policy
           </div>
           <div
-            className={`font-normal text-base sm:text-lg leading-7 sm:leading-8 text-center text-slate-500 capitalize ${plusJakartaSans.className}`}
+            className={`font-normal text-base sm:text-lg leading-7 sm:leading-8 text-center text-slate-500 capitalize font-Stoshi`}
           >
             Discover Your Potentials and grow with us
           </div>
@@ -32,12 +32,12 @@ const Privacy = () => {
       <div className="flex flex-col privay_container justify-start max-w-[1152px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-[22px] max-w-[1052px] mb-[61px]">
           <div
-            className={`font-bold text-base sm:text-lg leading-6 sm:leading-[22px] text-gray-600 ${plusJakartaSans.className}`}
+            className={`font-bold text-base sm:text-lg leading-6 sm:leading-[22px] text-gray-600 font-Stoshi`}
           >
             Effective date: April 24, 2024
           </div>
           <div
-            className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize ${plusJakartaSans.className}`}
+            className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize font-Stoshi`}
           >
             This Privacy Policy describes how Vanta Inc. (“Vanta”) collects,
             uses and discloses information, and what choices you have with
@@ -46,12 +46,12 @@ const Privacy = () => {
         </div>
 
         <div
-          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[20px] ${plusJakartaSans.className}`}
+          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[20px] font-Stoshi`}
         >
           1: <span className="font-bold capitalize">Scope of this Privacy Policy</span>
         </div>
         <div
-          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize ${plusJakartaSans.className}`}
+          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize font-Stoshi`}
         >
           This Privacy Policy applies to Vanta’s products and services,
           including applicable mobile and desktop applications (collectively,
@@ -63,7 +63,7 @@ const Privacy = () => {
         </div>
 
         <div
-          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 mb-[68px] capitalize ${plusJakartaSans.className}`}
+          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 mb-[68px] capitalize font-Stoshi`}
         >
           This Privacy Policy does not apply to any third-party applications
           or software that integrate with the Services through the Vanta
@@ -78,12 +78,12 @@ const Privacy = () => {
         </div>
 
         <div
-          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[20px] ${plusJakartaSans.className}`}
+          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[20px] font-Stoshi`}
         >
           2: <span className="font-bold capitalize">Information Vanta Collects and Receives</span>
         </div>
         <div
-          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[20px] ${plusJakartaSans.className}`}
+          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[20px] font-Stoshi`}
         >
           This Privacy Policy applies to Vanta’s products and services,
           including applicable mobile and desktop applications (collectively,
@@ -95,12 +95,12 @@ const Privacy = () => {
         </div>
 
         <div
-          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 capitalize ${plusJakartaSans.className}`}
+          className={`font-semibold text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 capitalize font-Stoshi`}
         >
           Usage information.
         </div>
         <div
-          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[20px] ${plusJakartaSans.className}`}
+          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[20px] font-Stoshi`}
         >
           <p>
             Services metadata. When an Authorized User interacts with the
@@ -112,7 +112,7 @@ const Privacy = () => {
           <ul className="list-disc ml-2 pl-5">
             <li>
               <span
-                className={`font-bold capitalize ${plusJakartaSans.className}`}
+                className={`font-bold capitalize font-Stoshi`}
               >
                 Log data.
               </span>{" "}
@@ -127,7 +127,7 @@ const Privacy = () => {
             </li>
             <li>
               <span
-                className={`font-bold capitalize ${plusJakartaSans.className}`}
+                className={`font-bold capitalize font-Stoshi`}
               >
                 Device information.
               </span>{" "}
@@ -139,7 +139,7 @@ const Privacy = () => {
             </li>
             <li>
               <span
-                className={`font-bold capitalize ${plusJakartaSans.className}`}
+                className={`font-bold capitalize font-Stoshi`}
               >
                 Location information.
               </span>{" "}
@@ -155,12 +155,12 @@ const Privacy = () => {
         </div>
 
         <div
-          className={`font-medium text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[31px] ${plusJakartaSans.className}`}
+          className={`font-medium text-base sm:text-lg leading-6 sm:leading-[22px] text-zinc-700 ml-1 sm:ml-3 mb-[31px] font-Stoshi`}
         >
           3: <span className="font-bold capitalize">Scope of this Privacy Policy</span>
         </div>
         <div
-          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[68px] ${plusJakartaSans.className}`}
+          className={`font-normal text-base sm:text-lg leading-7 sm:leading-[34px] text-slate-500 capitalize mb-[68px] font-Stoshi`}
         >
           This Privacy Policy applies to Vanta’s products and services,
           including applicable mobile and desktop applications (collectively,

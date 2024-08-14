@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi-Regular.otf'); 
+ }
 
 
 .container{
@@ -69,4 +73,5 @@ background-color: #054099;
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   
