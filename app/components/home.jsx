@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="relative container px-1 overflow-hidden lg:px-0 mx-auto">
       {/* Navbar */}
-      <div className="relative mt-4  ">
+      <div className="relative mt-[20px]  ">
         <Navbar />
       </div>
       {/* First Section */}

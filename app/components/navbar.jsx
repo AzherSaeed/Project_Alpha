@@ -73,7 +73,7 @@ const Navbar = () => {
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
-              pathname === "/" ? "text-custom-button-bg" : "text-gray-600"
+              pathname === "/" ? "text-custom-button-bg font-semibold" : "text-gray-600 font-semibold"
             } text-center cursor-pointer font-Stoshi`}
           >
             Home
@@ -82,18 +82,24 @@ const Navbar = () => {
             onClick={() => router.push("/join-team")}
             className={`font-normal text-lg leading-8 ${
               pathname === "/join-team"
-                ? "text-custom-button-bg"
-                : "text-gray-600"
+                ? "text-custom-button-bg font-semibold"
+                : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
             Careers
           </span>
           <button
-            onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
-          >
-            Contact Us
-          </button>
+  onClick={() => router.push("/contact-us")}
+  className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi
+    ${
+      pathname === "/contact-us"
+        ? "bg-[#054099] "
+        : "bg-custom-button-bg text-gray-600"
+    }`}
+>
+  Contact Us
+</button>
+
         </div>
 
         {/* Mobile Menu Button */}
