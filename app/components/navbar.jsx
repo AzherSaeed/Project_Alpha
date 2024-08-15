@@ -73,7 +73,7 @@ const Navbar = () => {
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
-              pathname === "/" ? "text-custom-button-bg font-semibold" : "text-gray-600 font-semibold"
+              pathname === "/" ? "text-custom-button-bg font-semibold" : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
             Home
