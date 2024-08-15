@@ -13,7 +13,7 @@ const privacy = () => {
         <div className="relative  mt-[40px] max-w-[1152px] mx-auto mb-[98px] ">
           <Navbar />
         </div>
-        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center">
+        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center px-2 lg:px-0">
           <div
             className={` font-bold text-[32px] leading-[42px] text-center text-blue-950 capitalize font-Stoshi`}
           >
@@ -26,7 +26,7 @@ const privacy = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col privay_container justify-start">
+      <div className="flex flex-col privay_container justify-start px-2 lg:px-0">
         <div className="space-y-[22px] max-w-[1052px] mb-[61px]">
           <div
             className={` font-bold text-lg leading-[22px] text-gray-600 font-Stoshi`}

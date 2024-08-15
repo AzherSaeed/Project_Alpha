@@ -90,7 +90,7 @@ const Navbar = () => {
           </span>
           <button
             onClick={() => router.push("/contact-us")}
-            className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
+            className={`h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
           >
             Contact Us
           </button>
