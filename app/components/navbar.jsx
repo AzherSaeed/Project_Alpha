@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <img
-            className="md:max-w-32 h-11 w-24  cursor-pointer"
+            className="w-24 cursor-pointer md:max-w-32 h-11"
             onClick={() => router.push("/")}
             src="/images/Logo2.svg"
             alt="Logo"
@@ -73,7 +73,7 @@ const Navbar = () => {
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
-              pathname === "/" ? "text-custom-button-bg font-semibold" : "text-gray-600 "
+              pathname === "/" ? "text-[#169CFF] font-semibold" : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
             Home
@@ -82,7 +82,7 @@ const Navbar = () => {
             onClick={() => router.push("/join-team")}
             className={`font-normal text-lg leading-8 ${
               pathname === "/join-team"
-                ? "text-custom-button-bg font-semibold"
+                ? "text-[#169CFF] font-semibold"
                 : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
@@ -103,7 +103,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <div className="flex items-center md:hidden">
           <button onClick={toggleSidebar} className="text-2xl">
             {sidebarOpen ? <FaTimes /> : <FaBars />}
           </button>

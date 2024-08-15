@@ -1,32 +1,10 @@
 'use client'
 import Navbar from "@/app/components/navbar";
 import React from "react";
-import { Plus_Jakarta_Sans } from "next/font/google";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
 
 const ContactUs = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const form = event.target;
-    const formData = new FormData(form);
-    const entries = Object.fromEntries(formData.entries());
-
-    const emailBody =  `
-      Full Name: ${entries.firstName} ${entries.lastName}\n
-      Email: ${entries.email}\n
-      Phone Number: ${entries.phoneNumber}\n
-      Description: ${entries.description}
-    `;
-
-    const mailtoLink = `mailto:founders@alpatech.ai?subject=Contact Us Form Submission&body=${encodeURIComponent(emailBody)}`;
-
-    window.location.href = mailtoLink;
-  };
+  
+  
 
   return (
     <>
@@ -43,12 +21,12 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form onSubmit={handleSubmit} className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[380px]  p-[40px] md:p-[60px] shadow-subtleDeepShadow">
-          <div className="flex flex-col md:flex-row gap-4 w-full">
+        <form  className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[380px]  p-[40px] md:p-[60px] shadow-subtleDeepShadow">
+          <div className="flex flex-col w-full gap-4 md:flex-row">
             <div className="w-full">
               <label
                 htmlFor="firstName"
-                className="block text-davyGrey font-medium text-sm"
+                className="block text-sm font-medium text-davyGrey"
               >
                 Full Name
               </label>
@@ -64,7 +42,7 @@ const ContactUs = () => {
             <div className="w-full">
               <label
                 htmlFor="lastName"
-                className="block text-davyGrey font-medium text-sm"
+                className="block text-sm font-medium text-davyGrey"
               >
                 Last Name
               </label>
@@ -78,11 +56,11 @@ const ContactUs = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 w-full">
+          <div className="flex flex-col w-full gap-4 md:flex-row">
             <div className="w-full">
               <label
                 htmlFor="email"
-                className="block text-davyGrey font-medium text-sm"
+                className="block text-sm font-medium text-davyGrey"
               >
                 Email
               </label>
@@ -98,7 +76,7 @@ const ContactUs = () => {
             <div className="w-full">
               <label
                 htmlFor="phoneNumber"
-                className="block text-davyGrey font-medium text-sm"
+                className="block text-sm font-medium text-davyGrey"
               >
                 Phone Number
               </label>
@@ -115,7 +93,7 @@ const ContactUs = () => {
           <div className="w-full">
             <label
               htmlFor="description"
-              className="block outline-slate-500 text-davyGrey font-medium text-sm"
+              className="block text-sm font-medium outline-slate-500 text-davyGrey"
             >
               Description
             </label>
