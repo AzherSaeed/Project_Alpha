@@ -2,11 +2,6 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import React, { useEffect, useState, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { Plus_Jakarta_Sans } from "next/font/google";
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
 
 const Navbar = () => {
   const router = useRouter();
@@ -69,7 +64,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between max-w-[357px] space-x-8  h-full ">
+        <div className="hidden md:flex items-center justify-between max-w-[440px] space-x-10  h-full ">
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 hover:text-[#169CFF] ${
@@ -88,16 +83,27 @@ const Navbar = () => {
           >
             Careers
           </span>
+          <span
+            onClick={() => router.push("/contact-us")}
+            className={`font-normal text-lg leading-8 ${
+              pathname === "/contact-us"
+                ? "text-[#169CFF] font-semibold"
+                : "text-gray-600 "
+            } text-center cursor-pointer hover:text-[#169CFF] font-Stoshi`}
+          >
+            Contact Us
+          </span>
           <button
-  onClick={() => router.push("/contact-us")}
-  className={`w-[131px]  h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi
-    ${
+  onClick={() => router.push("")}
+  className={`h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 transform  hover:bg-[#054099] hover:text-white font-Stoshi
+  ${
       pathname === "/contact-us"
         ? "bg-[#054099] "
         : "bg-custom-button-bg text-gray-600"
     }`}
 >
-  Contact Us
+  <span className="transition-all ease-in-out transform eaduration-300 hover:scale-110"> Log In</span>
+ 
 </button>
 
         </div>
@@ -126,6 +132,7 @@ const Navbar = () => {
             >
               Home
             </span>
+            
             <span
               onClick={() => {
                 router.push("/join-team");
@@ -135,14 +142,23 @@ const Navbar = () => {
             >
               Careers
             </span>
-            <button
+            <span
               onClick={() => {
                 router.push("/contact-us");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 font-Stoshi`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi hover:text-[#169CFF]`}
             >
               Contact Us
+            </span>
+            <button
+              onClick={() => {
+                router.push("");
+                toggleSidebar(); // Close sidebar after navigation
+              }}
+              className={`h-12 px-4 items-center border-2 rounded-full bg-blue-800 font-medium text-base text-white transition-all duration-300 ease-in-out transform hover:border-blue-800 hover:bg-white hover:text-blue-800 font-Stoshi`}
+            >
+              Login
             </button>
           </div>
         </div>

@@ -34,14 +34,13 @@ const Home = () => {
               </p>
             </div>
             <div className="text-center md:h-[52px]">
-             
-                  <button
-                             onClick={()=>router.push("/contact-us")}
+            <a href="https://calendly.com/founders-alpa" target="_blank" rel="">
+            <button 
                     className={`w-full max-w-[130px] lg:max-w-[146px] rounded-[39px] border-2 py-2 lg:py-3 px-4 lg:px-5 border-[#1E55A8] font-semibold text-sm lg:text-base leading-6 lg:leading-7 text-[#1E55A8] transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
                   >
                     Book a demo
                   </button>
-             
+                  </a>
             </div>
           </div>
                     {/* Dashboard image */}
