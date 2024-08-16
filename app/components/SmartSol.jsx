@@ -9,22 +9,22 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const SmartSol = () => {
   return (
-    <div className="flex flex-col container mx-auto px-4 md:px-8 lg:px-16 xl:px-0 h-auto ">
+    <div className="container flex flex-col h-auto px-4 mx-auto md:px-8 lg:px-16 xl:px-0 ">
       <div className="flex flex-col  lg:space-y-[84px] lg:mb-0 mb-[100px]">
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[32px] leading-[34px] lg:leading-[44px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-bold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Instant Compliance Processing
             </div>
             <div
               className={`font-normal text-base lg:text-lg leading-8 text-[#6D7A8D] font-Stoshi`}
             >
-              <ul className="custom-bullets space-y-4">
+              <ul className="space-y-4 custom-bullets">
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Upload and Analyze:
                   </span>
@@ -32,7 +32,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Immediate Feedback:
                   </span>
@@ -40,7 +40,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Start Strong:
                   </span>
@@ -49,44 +49,46 @@ const SmartSol = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:max-w-[570px]">
+          <div className="w-full lg:max-w-[609px]">
   <Image
-    className="w-full h-auto lg:h-[417px]"
+    className="w-full h-auto lg:h-[435px]"
     src="/images/Dashboard1.png"
     alt="Dashboard"
-    width={570}  
-    height={417} 
+    width={609}  
+    height={435} 
     layout="responsive"
+    loading = 'lazy'
   />
 </div>
 
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row w-full h-auto justify-between items-center space-y-10 lg:space-y-0 gap-5 lg:mb-0 mb-10">
+        <div className="flex flex-col-reverse items-center justify-between w-full h-auto gap-5 mb-10 space-y-10 lg:flex-row lg:space-y-0 lg:mb-0">
           
-<div className="w-full lg:max-w-[530px]">
+<div className="w-full lg:max-w-[568px]">
   <Image
     src="/images/Dashboard2.png"
     alt="Dashboard"
-    className="w-full h-auto lg:h-[417px]"
-    width={530}  
-    height={417} 
+    className="w-full h-auto lg:h-[407px]"
+    width={568}  
+    height={407} 
     layout="responsive"
+    loading = 'lazy'
   />
 </div>
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[32px] leading-[34px]  lg:leading-[52px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-bold text-[24px] lg:text-[48px] leading-[34px]  lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Streamlined Editing for Full Compliance
             </div>
             <div
               className={`font-normal text-base lg:text-lg leading-[30px] text-[#6D7A8D]   font-Stoshi`}
             >
-              <ul className="custom-bullets space-y-4 mb-8 ">
+              <ul className="mb-8 space-y-4 custom-bullets ">
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Pinpoint Corrections:
                   </span>
@@ -94,7 +96,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Edit and Resubmit:
                   </span>
@@ -102,7 +104,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Progress Efficiently:
                   </span>
@@ -116,17 +118,17 @@ const SmartSol = () => {
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mt-10 md:mt-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[32px] leading-[34px] lg:leading-[52px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-bold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Achieve and Maintain Perfect Compliance
             </div>
             <div
               className={`font-normal text-base lg:text-lg leading-8 text-[#6D7A8D] font-Stoshi`}
             >
-              <ul className="custom-bullets space-y-4 ">
+              <ul className="space-y-4 custom-bullets ">
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Comprehensive Monitoring:
                   </span>
@@ -134,7 +136,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Continuous Support:
                   </span>
@@ -142,7 +144,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[18px] leading-[30px] text-[#1E55A8] font-Stoshi`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Complete Verification:
                   </span>
@@ -151,14 +153,15 @@ const SmartSol = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:max-w-[570px]">
+          <div className="w-full lg:max-w-[630px]">
             <Image
-              className="w-full h-auto lg:h-[417px]"
+              className="w-full h-auto lg:h-[411px]"
               src="/images/Dashboard3.png"
               alt="Dashboard"
-              width={570}
-              height={417} 
+              width={630}
+              height={411} 
               layout="responsive"
+              loading = 'lazy'
             />
           </div>
         </div>

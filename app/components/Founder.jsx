@@ -7,7 +7,7 @@ const Founder = () => {
   return (
     <div className="flex max-w-[95%] lg:max-w-[1089px] mx-auto flex-col items-center justify-between space-y-6 lg:space-y-[32px] mb-16 lg:mb-[128px]">
       <div
-        className={`font-bold text-2xl lg:text-[34px] leading-8 lg:leading-[46px] text-center text-[#2D3643] font-Stoshi`}
+        className={`font-bold text-2xl lg:text-[48px] leading-8 lg:leading-[62px] text-center text-[#1B2559] font-Stoshi`}
       >
         Founders
       </div>
@@ -24,7 +24,7 @@ const Founder = () => {
           <img className="flex size-[56px] left-0 top-0" src="/images/PhotoF.png" alt="" />
           <div className="space-y-2 lg:space-y-4">
             <div className="w-[145px] space-y-1">
-              <div className={`font-bold text-base lg:text-lg leading-6 lg:leading-[22px] text-[#183B56] font-Stoshi`}>Alejandro Diez</div>
+              <div className={`font-bold text-base lg:text-[22px] leading-6 lg:leading-[27px] text-[#183B56] font-Stoshi`}>Alejandro Diez</div>
               <div className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] font-Stoshi`}>Co-founder</div>
             </div>
             
@@ -39,7 +39,7 @@ const Founder = () => {
           <img className="flex size-[56px] left-0 top-0" src="/images/PhotoF.png" alt="" />
           <div className="space-y-2 lg:space-y-4">
             <div className="w-[145px] space-y-1">
-              <div className={`w-[152px] font-bold text-base lg:text-lg leading-6 lg:leading-[22px] text-[#183B56] font-Stoshi`}>Patricio Gutierrez</div>
+              <div className={`w-[166px] font-bold text-base lg:text-[22px] leading-6 lg:leading-[27px] text-[#183B56] font-Stoshi`}>Patricio Gutierrez</div>
               <div className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] font-Stoshi`}>Co-founder</div>
             </div>
           

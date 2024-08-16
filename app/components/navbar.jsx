@@ -50,18 +50,18 @@ const Navbar = () => {
     <div
       className={` ${
         header
-          ? "fixed top-0 py-4 container bg-white z-30"
+          ? "fixed top-0 py-2 container bg-white z-30"
           : "relative container bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
       <div
         id="navbar"
-        className="relative flex h-[52px] justify-between items-center z-10 mx-4 md:mx-0"
+        className="relative flex h-[52px]  max-w-[1149px] justify-between items-center z-10 mx-2  lg:mx-auto "
       >
         {/* Logo */}
         <div className="flex items-center">
           <img
-            className="md:max-w-32 h-11 w-24  cursor-pointer"
+            className="w-24 cursor-pointer md:max-w-32 h-11"
             onClick={() => router.push("/")}
             src="/images/Logo2.svg"
             alt="Logo"
@@ -69,11 +69,11 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between w-[357px] space-x-8 pr-1 h-full ">
+        <div className="hidden md:flex items-center justify-between max-w-[357px] space-x-8  h-full ">
           <span
             onClick={() => router.push("/")}
-            className={`font-normal text-lg leading-8 ${
-              pathname === "/" ? "text-custom-button-bg" : "text-gray-600"
+            className={`font-normal text-lg leading-8 hover:text-[#169CFF] ${
+              pathname === "/" ? "text-[#169CFF] font-semibold" : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
             Home
@@ -82,22 +82,28 @@ const Navbar = () => {
             onClick={() => router.push("/join-team")}
             className={`font-normal text-lg leading-8 ${
               pathname === "/join-team"
-                ? "text-custom-button-bg"
-                : "text-gray-600"
-            } text-center cursor-pointer font-Stoshi`}
+                ? "text-[#169CFF] font-semibold"
+                : "text-gray-600 "
+            } text-center cursor-pointer hover:text-[#169CFF] font-Stoshi`}
           >
             Careers
           </span>
           <button
-            onClick={() => router.push("/contact-us")}
-            className={`h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi`}
-          >
-            Contact Us
-          </button>
+  onClick={() => router.push("/contact-us")}
+  className={`w-[131px]  h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi
+    ${
+      pathname === "/contact-us"
+        ? "bg-[#054099] "
+        : "bg-custom-button-bg text-gray-600"
+    }`}
+>
+  Contact Us
+</button>
+
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <div className="flex items-center md:hidden">
           <button onClick={toggleSidebar} className="text-2xl">
             {sidebarOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -116,7 +122,7 @@ const Navbar = () => {
                 router.push("/");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi hover:text-[#169CFF]`}
             >
               Home
             </span>
@@ -125,7 +131,7 @@ const Navbar = () => {
                 router.push("/join-team");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi hover:text-[#169CFF]`}
             >
               Careers
             </span>

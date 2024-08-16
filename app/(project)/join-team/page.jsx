@@ -29,7 +29,7 @@ const JoinTeam = () => {
           />
           <div className="bg-gradient-to-r from-blueChalk/0 mt-1 via-blueChalk to-blueChalk/0 h-1.5 w-full"></div>
         </div>
-        <div className={`text-center font-bold text-xl md:text-3xl leading-6 px-2 md:px-0 capitalize  mt-4 text-[#1E55A8] mb-[5px] font-Stoshi`}>
+        <div className={`text-center font-bold text-xl md:text-[31px] leading-8 px-2 md:px-0   mt-4 text-[#1E55A8] mb-[5px] font-Stoshi`}>
           There are no openings yet
         </div>
         <div className={`text-center px-2 md:px-0 text-sm  md:text-base  leading-6  text-[#6D7A8D] mt-2 font-Stoshi`}>
