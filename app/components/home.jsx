@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       {/* First Section */}
       <div className="flex flex-col space-y-6 lg:space-y-[152px] mb-8 lg:mb-[120px] ">
-        <div className="flex flex-col max-w-full lg:max-w-[1100px] mt-6 lg:mt-[152px] mx-auto space-y-4 lg:space-y-[78px]">
+        <div className="flex flex-col max-w-full lg:max-w-[1053px] mt-6 lg:mt-[152px] mx-auto space-y-4 lg:space-y-[78px]">
           <div className="flex flex-col max-w-full lg:max-w-[891px] mx-auto space-y-4 lg:space-y-8 text-center lg:text-left px-1 md:px-0">
             <div className="flex flex-col gap-4 text-center lg:gap-6">
               <h1
@@ -48,10 +48,11 @@ const Home = () => {
                     <Image
   src="/images/Dashboard.png"
   alt="Dashboard"
-  className="w-full max-w-[1280px] mx-auto"
+  className="max-w-full mx-auto"
   width={1280}  
   height={720}  
   layout="responsive"
+  loading = 'lazy'
 />
         </div>
       </div>

@@ -1,14 +1,9 @@
 import React from 'react'
-import Slider from "./slider";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import Image from 'next/image'
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
+
 const Trusted_clients = () => {
   return (
-    <div className='space-y-[200px]   mt:[50px] md:mt-[120px] mb-[128px]'>
+    <div className='space-y-[200px] lg:max-w-[1089px] lg:mx-auto   mt:[50px] md:mt-[120px] mb-[128px]'>
         <div className="flex container flex-col items-center space-y-[55px] ">
     <div className='space-y-[21px]'>
     <div
@@ -69,30 +64,13 @@ Compliance made simple
   className="logo"
   width={225}  // Replace this with the actual width of the SVG.
   height={39} // Replace this with the actual height of the SVG.
-  layout="intrinsic" // Use intrinsic layout for SVG to maintain its original size.
-  priority // Add this if the image should load with higher priority.
+  layout="intrinsic" 
+  priority 
 />         </div>
     </div>
     
   </div>
-  {/* <div className="flex flex-col container justify-center items-center  space-y-[61px]">
-    <div className="w-full lg:w-[623px]">
-      <div
-        className={`font-bold text-[28px] lg:text-[32px] mb-[21px] leading-[38px] lg:leading-[42px] text-center text-blue-950 capitalize font-Stoshi`}
-      >
-        What Our Customers are Saying
-      </div>
-      <div
-        className={`font-normal text-base lg:text-lg leading-8 text-center text-slate-500 capitalize mx-1 md:mx-0 font-Stoshi`}
-      >
-        Take advantage of a consistent budgeting, execution, and reporting
-        experience with standardized planning
-      </div>
-    </div>
-    <div className="container flex ">
-      <Slider />
-    </div>
-  </div> */}
+ 
   </div>
   )
 }

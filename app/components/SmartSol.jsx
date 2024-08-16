@@ -49,14 +49,15 @@ const SmartSol = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:max-w-[570px]">
+          <div className="w-full lg:max-w-[609px]">
   <Image
-    className="w-full h-auto lg:h-[417px]"
+    className="w-full h-auto lg:h-[435px]"
     src="/images/Dashboard1.png"
     alt="Dashboard"
-    width={570}  
-    height={417} 
+    width={609}  
+    height={435} 
     layout="responsive"
+    loading = 'lazy'
   />
 </div>
 
@@ -64,14 +65,15 @@ const SmartSol = () => {
 
         <div className="flex flex-col-reverse items-center justify-between w-full h-auto gap-5 mb-10 space-y-10 lg:flex-row lg:space-y-0 lg:mb-0">
           
-<div className="w-full lg:max-w-[530px]">
+<div className="w-full lg:max-w-[568px]">
   <Image
     src="/images/Dashboard2.png"
     alt="Dashboard"
-    className="w-full h-auto lg:h-[417px]"
-    width={530}  
-    height={417} 
+    className="w-full h-auto lg:h-[407px]"
+    width={568}  
+    height={407} 
     layout="responsive"
+    loading = 'lazy'
   />
 </div>
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
@@ -151,14 +153,15 @@ const SmartSol = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:max-w-[570px]">
+          <div className="w-full lg:max-w-[630px]">
             <Image
-              className="w-full h-auto lg:h-[417px]"
+              className="w-full h-auto lg:h-[411px]"
               src="/images/Dashboard3.png"
               alt="Dashboard"
-              width={570}
-              height={417} 
+              width={630}
+              height={411} 
               layout="responsive"
+              loading = 'lazy'
             />
           </div>
         </div>

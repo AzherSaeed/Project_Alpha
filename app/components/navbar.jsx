@@ -50,13 +50,13 @@ const Navbar = () => {
     <div
       className={` ${
         header
-          ? "fixed top-0 py-4 container bg-white z-30"
+          ? "fixed top-0 py-2 container bg-white z-30"
           : "relative container bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
       <div
         id="navbar"
-        className="relative flex h-[52px] justify-between items-center z-10 mx-4 md:mx-0"
+        className="relative flex h-[52px]  max-w-[1149px] justify-between items-center z-10 mx-2  lg:mx-auto "
       >
         {/* Logo */}
         <div className="flex items-center">
@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-between w-[357px] space-x-8 pr-1 h-full ">
+        <div className="hidden md:flex items-center justify-between max-w-[357px] space-x-8  h-full ">
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 ${
