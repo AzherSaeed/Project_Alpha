@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center justify-between max-w-[357px] space-x-8  h-full ">
           <span
             onClick={() => router.push("/")}
-            className={`font-normal text-lg leading-8 ${
+            className={`font-normal text-lg leading-8 hover:text-[#169CFF] ${
               pathname === "/" ? "text-[#169CFF] font-semibold" : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
@@ -84,13 +84,13 @@ const Navbar = () => {
               pathname === "/join-team"
                 ? "text-[#169CFF] font-semibold"
                 : "text-gray-600 "
-            } text-center cursor-pointer font-Stoshi`}
+            } text-center cursor-pointer hover:text-[#169CFF] font-Stoshi`}
           >
             Careers
           </span>
           <button
   onClick={() => router.push("/contact-us")}
-  className={`w-[131px] h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi
+  className={`w-[131px]  h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 ease-in-out transform hover:bg-[#054099] hover:text-white font-Stoshi
     ${
       pathname === "/contact-us"
         ? "bg-[#054099] "
@@ -122,7 +122,7 @@ const Navbar = () => {
                 router.push("/");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi hover:text-[#169CFF]`}
             >
               Home
             </span>
@@ -131,7 +131,7 @@ const Navbar = () => {
                 router.push("/join-team");
                 toggleSidebar(); // Close sidebar after navigation
               }}
-              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi`}
+              className={`font-normal text-base text-blue-950 cursor-pointer font-Stoshi hover:text-[#169CFF]`}
             >
               Careers
             </span>

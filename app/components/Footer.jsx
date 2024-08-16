@@ -24,33 +24,34 @@ const Footer = () => {
 
         {/* Centered div */}
         <div id="terms" className="flex justify-start my-auto ">
-          <div className="md:flex md:flex-row grid md:mx-0 mx-auto text-center grid-cols-2 justify-between w-[365px]">
-            <div
-            onClick={() => router.push('/terms-conditions')}
-              className={`font-normal text-sm leading-[29px] text-gray-600  cursor-pointer font-Stoshi`}
-            >
-              Terms
-            </div>
-            <div
-              onClick={() => router.push('/privacy-policy')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer  font-Stoshi`}
-            >
-              Privacy Policy
-            </div>
-            <div
-              onClick={() => router.push('/secruity')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer font-Stoshi`}
-            >
-              Security
-            </div>
-            <div
-             onClick={() => router.push('/contact-us')}
-              className={`font-normal text-sm leading-[29px] text-gray-600 cursor-pointer font-Stoshi`}
-            >
-              Contact Us
-            </div>
-          </div>
-        </div>
+  <div className="md:flex md:flex-row grid md:mx-0 mx-auto text-center grid-cols-2 justify-between w-[365px]">
+    <div
+      onClick={() => router.push('/terms-conditions')}
+      className="font-normal text-sm leading-[29px] text-gray-600 cursor-pointer hover:font-bold hover:text-[#169CFF] font-Stoshi"
+    >
+      Terms
+    </div>
+    <div
+      onClick={() => router.push('/privacy-policy')}
+      className="font-normal text-sm leading-[29px] text-gray-600 cursor-pointer hover:font-bold hover:text-[#169CFF] font-Stoshi"
+    >
+      Privacy Policy
+    </div>
+    <div
+      onClick={() => router.push('/secruity')}
+      className="font-normal text-sm leading-[29px] text-gray-600 cursor-pointer hover:font-bold hover:text-[#169CFF] font-Stoshi"
+    >
+      Security
+    </div>
+    <div
+      onClick={() => router.push('/contact-us')}
+      className="font-normal text-sm leading-[29px] text-gray-600 cursor-pointer hover:font-bold hover:text-[#169CFF] font-Stoshi"
+    >
+      Contact Us
+    </div>
+  </div>
+</div>
+
       </div>
 
       <div
