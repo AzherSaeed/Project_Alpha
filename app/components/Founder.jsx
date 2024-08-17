@@ -7,7 +7,7 @@ const Founder = () => {
   return (
     <div className="flex max-w-[95%] lg:max-w-[1089px] mx-auto flex-col items-center justify-between space-y-6 lg:space-y-[32px] mb-16 lg:mb-[128px]">
       <div
-        className={`font-extrabold text-2xl lg:text-[48px] leading-8 lg:leading-[62px] text-center text-[#1B2559] font-Satoshi_Bold`}
+        className={` text-2xl lg:text-[48px] leading-8 lg:leading-[62px] text-center text-[#1B2559] font-Stoshi`}
       >
         Founders
       </div>

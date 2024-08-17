@@ -22,7 +22,7 @@ const Home = () => {
           <div className="flex flex-col max-w-full lg:max-w-[891px] mx-auto space-y-4 lg:space-y-8 text-center lg:text-left px-1 md:px-0">
             <div className="flex flex-col gap-4 text-center lg:gap-6">
               <h1
-                className={`text-[#2D3643]  text-2xl lg:text-5xl leading-8 lg:leading-[64px] font-Satoshi_Bold `}
+                className={`text-[#2D3643]  text-2xl lg:text-5xl leading-8 lg:leading-[64px] font-Stoshi `}
               >
                 Unlock PCAOB Compliance with ALPA
               </h1>

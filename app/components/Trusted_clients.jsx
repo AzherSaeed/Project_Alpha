@@ -7,7 +7,7 @@ const Trusted_clients = () => {
         <div className="flex container flex-col items-center space-y-[55px] ">
     <div className='space-y-[21px]'>
     <div
-      className={`font-extrabold text-[28px] lg:text-[48px] leading-[38px] lg:leading-[62px] text-center text-[#1B2559] capitalize font-Satoshi_Bold`}
+      className={` text-[28px] lg:text-[48px] leading-[38px] lg:leading-[62px] text-center text-[#1B2559] capitalize font-Stoshi`}
     >
 Compliance made simple
     </div>

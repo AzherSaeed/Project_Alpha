@@ -14,7 +14,7 @@ const SmartSol = () => {
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
+              className={` text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Instant Compliance Processing
             </div>
@@ -78,7 +78,7 @@ const SmartSol = () => {
 </div>
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px]  lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
+              className={` text-[24px] lg:text-[48px] leading-[34px]  lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Streamlined Editing for Full Compliance
             </div>
@@ -118,7 +118,7 @@ const SmartSol = () => {
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mt-10 md:mt-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
+              className={`text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
             >
               Achieve and Maintain Perfect Compliance
             </div>
