@@ -99,7 +99,7 @@ const Navbar = () => {
             onClick={() => router.push("")}
             className={`h-full flex items-center px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 transform  hover:bg-[#054099] hover:text-white font-Stoshi
   ${
-    pathname === "/contact-us"
+    pathname === "/login"
       ? "bg-[#054099] "
       : "bg-custom-button-bg text-gray-600"
   }`}

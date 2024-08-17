@@ -153,9 +153,9 @@ const SmartSol = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full lg:max-w-[630px]">
+          <div className="w-full">
             <Image
-              className="w-full h-auto lg:h-[411px]"
+              className="w-full h-full"
               src="/images/Dashboard3.png"
               alt="Dashboard"
               width={630}

@@ -26,8 +26,8 @@ const Founder = () => {
           className="flex flex-row justify-between w-full lg:w-[218px] space-x-3"
         >
           <img
-            className="flex size-[56px] left-0 top-0"
-            src="/images/PhotoF.png"
+            className="w-14 h-14 rounded-full object-cover object-top"
+            src="/images/Alejandro Diez.jpeg"
             alt=""
           />
           <div className="space-y-2 lg:space-y-4">
@@ -44,7 +44,7 @@ const Founder = () => {
                 </div>
               </a>
               <div
-                className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] hover:text-[#169CFF] font-Stoshi`}
+                className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] font-Stoshi`}
               >
                 Co-founder
               </div>
@@ -61,8 +61,8 @@ const Founder = () => {
           className="flex flex-row justify-between w-full lg:w-[218px] space-x-3"
         >
           <img
-            className="flex size-[56px] left-0 top-0"
-            src="/images/PhotoF.png"
+            className="w-14 h-14 rounded-full object-cover object-top"
+            src="/images/Patricio Gutierrez.jpeg"
             alt=""
           />
           <div className="space-y-2 lg:space-y-4">
@@ -79,7 +79,7 @@ const Founder = () => {
                 </div>
               </a>
               <div
-                className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D] hover:text-[#169CFF] font-Stoshi`}
+                className={`font-normal text-xs lg:text-sm leading-[14px] text-[#6D7A8D]  font-Stoshi`}
               >
                 Co-founder
               </div>
