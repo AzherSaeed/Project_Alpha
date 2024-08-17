@@ -11,6 +11,8 @@ const ContactUs = () => {
     description: '',
   });
 
+  const [loading, setLoading] = useState(false); // New state for loading
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -20,6 +22,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when submission starts
 
     try {
       const response = await fetch('/api/sendEmail', {
@@ -46,6 +49,8 @@ const ContactUs = () => {
     } catch (error) {
       console.error('Error:', error);
       alert('Failed to send email.');
+    } finally {
+      setLoading(false); // Set loading to false after submission completes
     }
   };
 
@@ -56,7 +61,7 @@ const ContactUs = () => {
           <Navbar />
         </div>
         <div className="flex flex-col space-y-[15px] md:space-y-0 privay_container max-w-[95%] md:max-w-[1001px] justify-center items-center mx-auto">
-          <div className="font-bold text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950  font-Stoshi">
+          <div className="font-bold text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 font-Stoshi">
             Contact Us
           </div>
         </div>
@@ -133,12 +138,41 @@ const ContactUs = () => {
             />
           </div>
           <div className="flex justify-end">
-            <button
-              type="submit"
-              className="text-paleGrey shadow-softElevatedShadow bg-funBlue rounded-[100px] px-4 md:px-5 py-2 text-[16px] md:text-[18px]"
-            >
-              Send
-            </button>
+          <button
+  type="submit"
+  id="sendEmailButton"
+  className="text-paleGrey shadow-softElevatedShadow bg-funBlue rounded-[100px] px-4 md:px-5 py-2 text-[16px] md:text-[18px] flex items-center justify-center"
+  disabled={loading} // Disable button when loading
+>
+  {loading ? (
+    <>
+      <svg
+        className="w-5 h-5 mr-2 text-white animate-spin"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        ></circle>
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        ></path>
+      </svg>
+      Sending...
+    </>
+  ) : (
+    'Send'
+  )}
+</button>
+
           </div>
         </form>
       </div>
