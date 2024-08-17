@@ -14,7 +14,7 @@ const SmartSol = () => {
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
             >
               Instant Compliance Processing
             </div>
@@ -26,7 +26,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Upload and Analyze:
+                    Upload and Analyze
                   </span>
                   <br /> Instant evaluations upon document upload.
                 </li>
@@ -34,7 +34,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Immediate Feedback:
+                    Immediate Feedback
                   </span>
                   <br /> Real-time compliance status alerts.
                 </li>
@@ -42,7 +42,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Start Strong:
+                    Start Strong
                   </span>
                   <br /> Reduce rework with upfront compliance checks.
                 </li>
@@ -78,7 +78,7 @@ const SmartSol = () => {
 </div>
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[48px] leading-[34px]  lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px]  lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
             >
               Streamlined Editing for Full Compliance
             </div>
@@ -90,7 +90,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Pinpoint Corrections:
+                    Pinpoint Corrections
                   </span>
                   <br /> Alpa highlights precise compliance issues.
                 </li>
@@ -98,7 +98,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Edit and Resubmit:
+                    Edit and Resubmit
                   </span>
                   <br /> Make changes, update compliance with one click.
                 </li>
@@ -106,7 +106,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Progress Efficiently:
+                    Progress Efficiently
                   </span>
                   <br /> Advance towards full compliance swiftly.
                 </li>
@@ -118,7 +118,7 @@ const SmartSol = () => {
         <div className="flex flex-col lg:flex-row w-full h-auto lg:h-[508px] justify-between items-center space-y-10 lg:space-y-0 mt-10 md:mt-0 gap-5">
           <div className="max-w-full lg:max-w-[503px] space-y-[30px]">
             <div
-              className={`font-bold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Stoshi`}
+              className={`font-extrabold text-[24px] lg:text-[48px] leading-[34px] lg:leading-[62px] text-[#1B2559] capitalize font-Satoshi_Bold`}
             >
               Achieve and Maintain Perfect Compliance
             </div>
@@ -130,7 +130,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Comprehensive Monitoring:
+                    Comprehensive Monitoring
                   </span>
                   <br /> Oversee all documents' statuses on our dashboard.
                 </li>
@@ -138,7 +138,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Continuous Support:
+                    Continuous Support
                   </span>
                   <br /> Maintain standards effortlessly with Alpa's tools.
                 </li>
@@ -146,7 +146,7 @@ const SmartSol = () => {
                   <span
                     className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
-                    Complete Verification:
+                    Complete Verification
                   </span>
                   <br /> Confirm full compliance with final document reviews.
                 </li>

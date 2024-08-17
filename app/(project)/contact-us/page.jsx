@@ -73,7 +73,7 @@ const ContactUs = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 className="w-full outline-slate-500 placeholder:text-slate-500 placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi"
-                placeholder="Julia William"
+                placeholder="Julia"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ const ContactUs = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 className="w-full outline-slate-500 placeholder:text-slate-500 font-normal placeholder:text-[16px] md:placeholder:text-[18px] px-4 md:px-6 py-2 md:py-3 rounded-xl border border-ghost mt-2 md:mt-3 font-Stoshi"
-                placeholder="Julia William"
+                placeholder="William"
                 required
               />
             </div>

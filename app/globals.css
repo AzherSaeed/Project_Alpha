@@ -6,6 +6,11 @@
   font-family: 'Satoshi';
   src: url('/font/Satoshi-Regular.otf'); 
  }
+ @font-face {
+  font-family: 'Satoshi_Bold';
+  src: url('/font/Satoshi-Bold.otf'); 
+ }
+
 
 
 .container{
