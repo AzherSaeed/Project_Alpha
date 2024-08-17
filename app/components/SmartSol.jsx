@@ -24,7 +24,7 @@ const SmartSol = () => {
               <ul className="space-y-4 custom-bullets">
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Upload and Analyze
                   </span>
@@ -32,7 +32,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Immediate Feedback
                   </span>
@@ -40,7 +40,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Start Strong
                   </span>
@@ -88,7 +88,7 @@ const SmartSol = () => {
               <ul className="mb-8 space-y-4 custom-bullets ">
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Pinpoint Corrections
                   </span>
@@ -96,7 +96,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Edit and Resubmit
                   </span>
@@ -104,7 +104,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Progress Efficiently
                   </span>
@@ -128,7 +128,7 @@ const SmartSol = () => {
               <ul className="space-y-4 custom-bullets ">
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Comprehensive Monitoring
                   </span>
@@ -136,7 +136,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Continuous Support
                   </span>
@@ -144,7 +144,7 @@ const SmartSol = () => {
                 </li>
                 <li>
                   <span
-                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Satoshi_Semi_Bold`}
+                    className={`font-semibold text-[20px] leading-[30px] text-[#1E55A8] font-Stoshi`}
                   >
                     Complete Verification
                   </span>
