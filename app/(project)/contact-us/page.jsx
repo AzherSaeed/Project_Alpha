@@ -78,7 +78,7 @@ const ContactUs = () => {
                 htmlFor="firstName"
                 className="block text-sm font-medium text-davyGrey"
               >
-                Full Name
+                First Name
               </label>
               <input
                 type="text"
