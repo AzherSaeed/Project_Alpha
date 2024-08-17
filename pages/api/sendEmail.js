@@ -1,21 +1,23 @@
 import nodemailer from 'nodemailer';
-import Swal from 'sweetalert2'
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { firstName, lastName, email, phoneNumber, description } = req.body;
 
     let transporter = nodemailer.createTransport({
-      service: 'gmail',
+      secure: true,
+      host: 'smtp.gmail.com',
+      port: 465,
       auth: {
-        user: 'abdulmanan4066@gmail.com',
-        pass: 'vyrniqsasojlzxfs',
+        user: 'founders@alpatech.ai', // Use environment variable
+        pass: 'glgbcslwdcyjtpbc', // Use environment variable
       },
     });
 
     // Email options
     const mailOptions = {
-      from: email, // Sender 
-      to: 'abdulmanan4066@gmail.com', // Recipient 
+      from: email, // Must be the authenticated email
+      to: 'founders@alpatech.ai', // Email address where you want to receive the form submissions
       subject: 'New Contact Us Form Submission',
       html: `
       <div style="font-family: Arial, sans-serif; color: #333;">
@@ -26,10 +28,8 @@ export default async function handler(req, res) {
         <p><strong>Description:</strong></p>
         <p style="background-color: #f9f9f9; padding: 10px; border-left: 4px solid #007BFF;">${description}</p>
       </div>
-    `,
+      `,
     };
-    
-    
 
     try {
       await transporter.sendMail(mailOptions);
