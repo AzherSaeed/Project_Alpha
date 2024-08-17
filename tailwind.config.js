@@ -31,7 +31,8 @@ module.exports = {
         'open-sans': ['Open Sans', 'sans-serif'],
         Poppins: ['Poppins', 'sans-serif'],
         Stoshi: ['Satoshi', 'sans-serif'],
-        Satoshi_Bold: ['Satoshi_Bold', 'sans-serif']
+        Satoshi_Bold: ['Satoshi_Bold', 'sans-serif'],
+        Satoshi_Semi_Bold: ['Satoshi_Semi_Bold', 'sans-serif']
 
 
        

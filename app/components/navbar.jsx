@@ -68,7 +68,9 @@ const Navbar = () => {
           <span
             onClick={() => router.push("/")}
             className={`font-normal text-lg leading-8 hover:text-[#169CFF] ${
-              pathname === "/" ? "text-[#169CFF] font-semibold" : "text-gray-600 "
+              pathname === "/"
+                ? "text-[#169CFF] font-semibold"
+                : "text-gray-600 "
             } text-center cursor-pointer font-Stoshi`}
           >
             Home
@@ -94,18 +96,16 @@ const Navbar = () => {
             Contact Us
           </span>
           <button
-  onClick={() => router.push("")}
-  className={`h-full flex items-center py-[12px] px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 transform  hover:bg-[#054099] hover:text-white font-Stoshi
+            onClick={() => router.push("")}
+            className={`h-full flex items-center px-[22px] custom-button-bg rounded-full font-semibold text-base leading-7 text-white transition-all duration-300 transform  hover:bg-[#054099] hover:text-white font-Stoshi
   ${
-      pathname === "/contact-us"
-        ? "bg-[#054099] "
-        : "bg-custom-button-bg text-gray-600"
-    }`}
->
-  <span className="transition-all ease-in-out transform eaduration-300 hover:scale-110"> Log In</span>
- 
-</button>
-
+    pathname === "/contact-us"
+      ? "bg-[#054099] "
+      : "bg-custom-button-bg text-gray-600"
+  }`}
+          >
+            <span className="eaduration-300"> Log In</span>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -132,7 +132,7 @@ const Navbar = () => {
             >
               Home
             </span>
-            
+
             <span
               onClick={() => {
                 router.push("/join-team");

@@ -1,15 +1,16 @@
-'use client';
+"use client";
 import Navbar from "@/app/components/navbar";
 import React, { useState } from "react";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    description: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    description: "",
   });
+  const [responseMessage, setResponseMessage] = useState(null);
 
   const [loading, setLoading] = useState(false); // New state for loading
 
@@ -23,32 +24,32 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true); // Set loading to true when submission starts
+    setResponseMessage("");
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        alert('Email sent successfully!');
+        setResponseMessage("Email Sent Successfully");
         // Reset form
         setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phoneNumber: '',
-          description: '',
+          firstName: "",
+          lastName: "",
+          email: "",
+          phoneNumber: "",
+          description: "",
         });
       } else {
-        alert('Failed to send email.');
+        setResponseMessage("Failed to send email.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Failed to send email.');
+      setResponseMessage("Failed to send email.");
     } finally {
       setLoading(false); // Set loading to false after submission completes
     }
@@ -67,10 +68,18 @@ const ContactUs = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <form onSubmit={handleSubmit} className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[400px] p-[40px] md:p-[60px] shadow-subtleDeepShadow">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[400px] p-[40px] md:p-[60px] shadow-subtleDeepShadow"
+        >
           <div className="flex flex-col w-full gap-4 md:flex-row">
             <div className="w-full">
-              <label htmlFor="firstName" className="block text-sm font-medium text-davyGrey">Full Name</label>
+              <label
+                htmlFor="firstName"
+                className="block text-sm font-medium text-davyGrey"
+              >
+                Full Name
+              </label>
               <input
                 type="text"
                 id="firstName"
@@ -83,7 +92,12 @@ const ContactUs = () => {
               />
             </div>
             <div className="w-full">
-              <label htmlFor="lastName" className="block text-sm font-medium text-davyGrey">Last Name</label>
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-medium text-davyGrey"
+              >
+                Last Name
+              </label>
               <input
                 type="text"
                 id="lastName"
@@ -98,7 +112,12 @@ const ContactUs = () => {
           </div>
           <div className="flex flex-col w-full gap-4 md:flex-row">
             <div className="w-full">
-              <label htmlFor="email" className="block text-sm font-medium text-davyGrey">Email</label>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-davyGrey"
+              >
+                Email
+              </label>
               <input
                 type="email"
                 id="email"
@@ -111,7 +130,12 @@ const ContactUs = () => {
               />
             </div>
             <div className="w-full">
-              <label htmlFor="phoneNumber" className="block text-sm font-medium text-davyGrey">Phone Number</label>
+              <label
+                htmlFor="phoneNumber"
+                className="block text-sm font-medium text-davyGrey"
+              >
+                Phone Number
+              </label>
               <input
                 type="tel"
                 id="phoneNumber"
@@ -125,7 +149,12 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="w-full">
-            <label htmlFor="description" className="block text-sm font-medium outline-slate-500 text-davyGrey">Description</label>
+            <label
+              htmlFor="description"
+              className="block text-sm font-medium outline-slate-500 text-davyGrey"
+            >
+              Description
+            </label>
             <textarea
               id="description"
               name="description"
@@ -137,42 +166,43 @@ const ContactUs = () => {
               required
             />
           </div>
-          <div className="flex justify-end">
-          <button
-  type="submit"
-  id="sendEmailButton"
-  className="text-paleGrey shadow-softElevatedShadow bg-funBlue rounded-[100px] px-4 md:px-5 py-2 text-[16px] md:text-[18px] flex items-center justify-center"
-  disabled={loading} // Disable button when loading
->
-  {loading ? (
-    <>
-      <svg
-        className="w-5 h-5 mr-2 text-white animate-spin"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <circle
-          className="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          strokeWidth="4"
-        ></circle>
-        <path
-          className="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-        ></path>
-      </svg>
-      Sending...
-    </>
-  ) : (
-    'Send'
-  )}
-</button>
+          <p className="text-green-500 text-[16px]">{responseMessage}</p>
 
+          <div className="flex justify-end">
+            <button
+              type="submit"
+              id="sendEmailButton"
+              className="text-paleGrey shadow-softElevatedShadow bg-funBlue rounded-[100px] px-4 md:px-5 py-2 text-[16px] md:text-[18px] flex items-center justify-center"
+              disabled={loading} // Disable button when loading
+            >
+              {loading ? (
+                <>
+                  <svg
+                    className="w-5 h-5 mr-2 text-white animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                "Send"
+              )}
+            </button>
           </div>
         </form>
       </div>

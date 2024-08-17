@@ -16,14 +16,13 @@ export default async function handler(req, res) {
 
     // Email options
     const mailOptions = {
-      from: email, // Must be the authenticated email
-      to: 'founders@alpatech.ai', // Email address where you want to receive the form submissions
-      subject: 'New Contact Us Form Submission',
+      from: "founders@alpatech.ai", // Must be the authenticated email
+      to: email, // Email address where you want to receive the form submissions
+      subject: `${firstName} ${lastName} contact to support`,
       html: `
       <div style="font-family: Arial, sans-serif; color: #333;">
-        <h2 style="color: #007BFF;">New Contact Us Form Submission</h2>
+        <h2 style="color: #007BFF;">${firstName} ${lastName} have a query</h2>
         <p><strong>Full Name:</strong> ${firstName} ${lastName}</p>
-        <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #007BFF;">${email}</a></p>
         <p><strong>Phone Number:</strong> <a href="tel:${phoneNumber}" style="color: #007BFF;">${phoneNumber}</a></p>
         <p><strong>Description:</strong></p>
         <p style="background-color: #f9f9f9; padding: 10px; border-left: 4px solid #007BFF;">${description}</p>

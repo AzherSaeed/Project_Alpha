@@ -10,6 +10,10 @@
   font-family: 'Satoshi_Bold';
   src: url('/font/Satoshi-Bold.otf'); 
  }
+ @font-face {
+  font-family: 'Satoshi_Semi_Bold';
+  src: url('/font/Satoshi-Medium.otf'); 
+ }
 
 
 
