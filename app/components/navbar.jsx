@@ -15,31 +15,29 @@ const Navbar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  const scrollHeader = () => {
-    if (window.scrollY >= 500) {
-      setHeader(true);
-    } else {
-      setHeader(false);
-    }
-  };
+  // const scrollHeader = () => {
+  //   if (window.scrollY >= 500) {
+  //     setHeader(true);
+  //   } else {
+  //     setHeader(false);
+  //   }
+  // };
 
-  const handleClickOutside = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-      setSidebarOpen(false); // Close sidebar if click is outside
-    }
-  };
+  // const handleClickOutside = (event) => {
+  //   if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+  //     setSidebarOpen(false); // Close sidebar if click is outside
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", scrollHeader);
-    document.addEventListener("mousedown", handleClickOutside);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", scrollHeader);
+  //   document.addEventListener("mousedown", handleClickOutside);
 
-    return () => {
-      window.removeEventListener("scroll", scrollHeader);
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  console.log(pathname, "pathname");
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollHeader);
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
   return (
     <div
