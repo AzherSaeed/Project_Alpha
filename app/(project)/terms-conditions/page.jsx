@@ -10,10 +10,10 @@ const privacy = () => {
   return (
     <>
       <div className=" overflow-hidden bg-slate-50 h-[400px] mb-[61px]">
-      <div className="relative mt-[20px]  max-w-[1152px] mx-auto mb-[40px] ">
+      <div className="">
           <Navbar />
         </div>
-        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center px-2 lg:px-0">
+        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center mt-[100px] items-center px-2 lg:px-0">
           <div
             className={` font-bold text-[32px] leading-[42px] text-center text-blue-950 capitalize font-Stoshi`}
           >
@@ -26,7 +26,7 @@ const privacy = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col privay_container justify-start px-2 lg:px-0">
+      <div className="flex flex-col justify-start px-2 privay_container lg:px-0">
         <div className="space-y-[22px] max-w-[1052px] mb-[61px]">
           <div
             className={` font-bold text-lg leading-[22px] text-gray-600 font-Stoshi`}

@@ -7,7 +7,7 @@ const Footer = () => {
   const router = useRouter();
   const pathname = usePathname();
   return (
-    <div className="space-y-6 md:space-y-[128px]">
+    <div className="container space-y-6 md:space-y-[128px]">
       <div className="flex flex-col justify-between md:flex-row md:items-start">
         <div className="w-full md:max-w-[318px]">
           <div className="flex flex-col items-center mb-6 md:text-left md:mb-0 md:items-start">
@@ -23,10 +23,10 @@ const Footer = () => {
 
         {/* Centered div */}
         <div id="terms" className="flex justify-start my-auto ">
-          <div className="md:flex md:flex-row grid md:mx-0 mx-auto text-center grid-cols-2 justify-between w-[365px]">
+          <div className="md:flex  md:flex-row grid md:mx-0 mx-auto text-center grid-cols-2 justify-between w-[365px]">
             <div
               onClick={() => router.push("/terms-conditions")}
-              className={`font-normal text-sm leading-[29px cursor-pointer hover:font-bold hover:text-[#169CFF] ${
+              className={`font-normal text-sm leading-[29px] cursor-pointer hover:font-bold hover:text-[#169CFF] ${
                 pathname === "/terms-conditions"
                   ? "text-[#169CFF] font-semibold"
                   : "text-gray-600 "

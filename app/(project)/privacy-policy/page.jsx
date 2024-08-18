@@ -12,10 +12,10 @@ const Privacy = () => {
   return (
     <>
       <div className="overflow-hidden bg-slate-50 h-[400px] mb-[61px]">
-      <div className="relative mt-[20px]  max-w-[1152px] mx-auto mb-[40px] ">
+      <div className="">
           <Navbar />
         </div>
-        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] mt-[100px] justify-center items-center mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`font-bold text-[28px] sm:text-[32px] leading-[38px] sm:leading-[42px] text-center text-blue-950 font-Stoshi`}
           >
@@ -114,7 +114,7 @@ const Privacy = () => {
             example, Vanta logs what Third Party Services are connected with the
             Services (if any).
           </p>
-          <ul className="list-disc ml-2 pl-5">
+          <ul className="pl-5 ml-2 list-disc">
             <li>
               <span className={`font-bold capitalize font-Stoshi`}>
                 Log data.

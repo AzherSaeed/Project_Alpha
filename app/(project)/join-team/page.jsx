@@ -5,11 +5,11 @@ import React from "react";
 const JoinTeam = () => {
   return (
     <>
-      <div className=" overflow-hidden bg-[#F9FAFF] md:h-[200px] h-[200px]  mb-[20px]  md:px-0 px-0">
-        <div className="relative mt-[20px]  max-w-[1152px] mx-auto mb-[40px] ">
+      <div className=" overflow-hidden bg-[#F9FAFF] md:h-[200px] h-[200px]    md:px-0 px-0">
+        <div className="">
           <Navbar />
         </div>
-        <div className="flex flex-col privay_container max-w-[1001px] justify-center items-center">
+        <div className="flex flex-col privay_container max-w-[1001px] justify-center mt-[30px] items-center">
           <div
             className={` font-bold  text-2xl md:text-[32px] leading-[42px] text-center capitalize text-blue-950 font-Stoshi`}>
             Join our team
@@ -18,7 +18,7 @@ const JoinTeam = () => {
       </div>
 
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-[10px]">
         <div className="openings-section flex flex-col items-center max-w-[675px] w-full">
           <Image
             src="/images/search-illustration.png"

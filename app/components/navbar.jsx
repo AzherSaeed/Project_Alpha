@@ -15,41 +15,41 @@ const Navbar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  // const scrollHeader = () => {
-  //   if (window.scrollY >= 500) {
-  //     setHeader(true);
-  //   } else {
-  //     setHeader(false);
-  //   }
-  // };
+  const scrollHeader = () => {
+    if (window.scrollY >= 500) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
 
-  // const handleClickOutside = (event) => {
-  //   if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-  //     setSidebarOpen(false); // Close sidebar if click is outside
-  //   }
-  // };
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setSidebarOpen(false); // Close sidebar if click is outside
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", scrollHeader);
-  //   document.addEventListener("mousedown", handleClickOutside);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+    document.addEventListener("mousedown", handleClickOutside);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHeader);
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", scrollHeader);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
       className={` ${
         header
-          ? "fixed top-0 py-2 container bg-white z-30"
-          : "relative container bg-transparent"
-      } transition-all duration-300 ease-in-out`}
+          ? "fixed w-full mx-auto bg-white z-30"
+          : " relative  bg-transparent "
+      } py-3 lg:px-0 px-2 transition-all duration-300 ease-in-out`}
     >
       <div
         id="navbar"
-        className="relative flex h-[52px]  max-w-[1149px] justify-between items-center z-10 mx-2  lg:mx-auto "
+        className="relative flex h-[52px]  max-w-[1152px] justify-between items-center z-10   lg:mx-auto "
       >
         {/* Logo */}
         <div className="flex items-center">

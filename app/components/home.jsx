@@ -11,9 +11,9 @@ import Image from "next/image"
 const Home = () => {
   const router = useRouter ();
   return (
-    <div className="container relative px-1 mx-auto overflow-hidden lg:px-0">
+    <div className="relative px-1 mx-auto overflow-hidden lg:px-0">
       {/* Navbar */}
-      <div className="relative mt-[20px]  ">
+      <div className="">
         <Navbar />
       </div>
       {/* First Section */}

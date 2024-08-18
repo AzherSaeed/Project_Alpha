@@ -58,10 +58,10 @@ const ContactUs = () => {
   return (
     <>
       <div className="overflow-hidden bg-slate-50 h-[300px] md:h-[629px] ">
-        <div className="relative mt-[20px] max-w-[95%] md:max-w-[1152px] mx-auto mb-[62px]">
+        <div className="">
           <Navbar />
         </div>
-        <div className="flex flex-col space-y-[15px] md:space-y-0 privay_container max-w-[95%] md:max-w-[1001px] justify-center items-center mx-auto">
+        <div className="flex flex-col space-y-[15px] md:space-y-0 privay_container max-w-[95%] mt-[30px] md:max-w-[1001px] justify-center items-center mx-auto">
           <div className="font-bold text-[24px] md:text-[32px] leading-[32px] md:leading-[42px] text-center text-blue-950 font-Stoshi">
             Contact Us
           </div>
@@ -70,7 +70,7 @@ const ContactUs = () => {
       <div className="flex flex-col items-center">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[400px] p-[40px] md:p-[60px] shadow-subtleDeepShadow"
+          className="flex flex-col w-full gap-[24px] md:gap-[34px] rounded-xl max-w-[95%] md:max-w-[1026px] relative bg-white -mt-[100px] md:-mt-[440px] p-[40px] md:p-[60px] shadow-subtleDeepShadow"
         >
           <div className="flex flex-col w-full gap-4 md:flex-row">
             <div className="w-full">
