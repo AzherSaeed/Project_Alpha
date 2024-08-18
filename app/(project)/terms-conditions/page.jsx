@@ -10,7 +10,7 @@ const privacy = () => {
   return (
     <>
       <div className=" overflow-hidden bg-slate-50 h-[400px] mb-[61px]">
-        <div className="relative  mt-[40px] max-w-[1152px] mx-auto mb-[98px] ">
+      <div className="relative mt-[20px]  max-w-[1152px] mx-auto mb-[40px] ">
           <Navbar />
         </div>
         <div className="flex flex-col space-y-[21px] privay_container max-w-[1001px] justify-center items-center px-2 lg:px-0">
